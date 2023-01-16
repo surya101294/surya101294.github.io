@@ -6,7 +6,7 @@ import {
   Image,
   Stack,
   Text, Link,
-  Highlight
+  Highlight, Box
 } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
@@ -14,7 +14,9 @@ import { SiGmail } from 'react-icons/si'
 
 export default function Home() {
   
-  return (<Center>
+  return (
+  // <Center>
+    <Box boxShadow={'2xl'} width={'95%'} margin={'auto'} id='homepage' >
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
 
       <Flex flex={1} paddingTop={'50px'} justifyContent={'center'}>
@@ -115,7 +117,8 @@ export default function Home() {
         </Stack>
       </Flex>
     </Stack>
-  </Center>
+  {/* </Center> */}
+    </Box>
   );
 }
 

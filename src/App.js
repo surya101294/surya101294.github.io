@@ -6,6 +6,8 @@ import Footer from './Components/Footer';
 import Skills from './Components/Skills';
 import Home from './Pages/Home';
 import Project from './Components/Project';
+import  Calender  from './Components/Calender';
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +18,6 @@ function App() {
     <Skills/>
     <Contact/>
     <Footer/> 
-    
     </div>
   );
 }

@@ -61,13 +61,16 @@ export default function Contact() {
     setMsg("")
   }
   // bg="#9DC4FB"
+  // <Box boxShadow={'2xl'} width={'95%'} margin={'auto'}></Box>
   return (
-    <Container bg='#9DC4FB' maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' >
+    <Container  maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' boxShadow={'2xl'} width={'95%'} margin={'auto'}>
       <Flex>
         <Box
         _hover={{transform: 'scale(1.01)', }}
-          bg="#02054B"
-          color="white"
+          // bg="#02054B"
+          border={'2px'}
+          borderColor={'blue.200'}
+          color="black"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}>
@@ -86,7 +89,8 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        // color="#DCE2FF"
+                        color="black"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
                         +91-7503766953
@@ -96,7 +100,8 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        // color="#DCE2FF"
+                        color="black"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
                         surya101294@gmail.com
@@ -106,9 +111,10 @@ export default function Contact() {
                         height="48px"
                         width="200px"
                         variant="ghost"
-                        color="#DCE2FF"
+                        // color="#DCE2FF"
+                        color="black"
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
+                        leftIcon={<MdLocationOn color="black" size="20px" />}>
                         Ghaziabad, UttarPradesh, India
                       </Button>
                     </VStack>

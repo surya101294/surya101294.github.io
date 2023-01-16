@@ -16,7 +16,7 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,  useColorMode,
-  Center,
+  Center, Heading, Highlight
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -43,8 +43,10 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} >
+    <div style={{position:'fixed', width:'100%'}} 
+    display={{ base: 'none', md: 'flex' }}
+    >
+      <Box bg={useColorModeValue('gray.300', 'gray.900')} px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -54,25 +56,30 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box size={'4xl'} paddingRight={'20px'}>S.P Pokhriyal</Box>
+            <Heading as='h2' size={'lg'} paddingRight={'20px'} color={'blue.700'} ><Highlight query='S.P' styles={{ px: '1', py: '1', bg: 'blue.100', rounded: 'full', color:'blue.400' }}>S.PPokhriyal</Highlight> </Heading>
             <HStack
               as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}>
+              spacing={8}
+              display={{ base: 'none', md: 'flex' }}
+              gap={'30px'} 
+              // size={'4xl'}
+              >
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
               {/* <Stack direction={'row'} spacing={6}> */}
-            <HashLink to={'#aboutpage'} smooth>About</HashLink>
-            <HashLink to={'#skillpage'} smooth>Skill</HashLink>
-            <HashLink to={'#projectpage'} smooth>Project</HashLink>
-            <HashLink to={'#contactpage'} smooth>Contact</HashLink>
-            <Link href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'} smooth>Resume</Link>
+              {/* <Heading as='h4' size={'md'} gap={'30px'} > */}
+            <HashLink to={'#aboutpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>About</Heading></HashLink>
+            <HashLink to={'#skillpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Skill</Heading></HashLink>
+            <HashLink to={'#projectpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Project</Heading></HashLink>
+            <HashLink to={'#contactpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Contact</Heading></HashLink>
+            <Link href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'blue'}><Highlight query='Resume' styles={{ px: '1', py: '1', bg: '#146ebe', rounded: 'full' }}>Resume</Highlight></Heading></Link>
           {/* </Stack> */}
+          {/* </Heading> */}
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <Menu>
+            <Menu gap={2}>
             <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
@@ -110,6 +117,6 @@ export default function Navbar() {
       </Box>
 
       {/* <Box p={4}>Main Content Here</Box> */}
-    </>
+    </div>
   );
 }

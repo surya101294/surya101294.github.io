@@ -1,12 +1,12 @@
 import React from 'react'
-import { Avatar, AvatarBadge, AvatarGroup, Wrap, WrapItem, Heading } from '@chakra-ui/react'
+import { Avatar, AvatarBadge, AvatarGroup, Wrap, WrapItem, Heading , Box} from '@chakra-ui/react'
 const Skills = () => {
   return (
-    <div style={{ width: '80%', margin: 'auto' }} id='skillpage'>
+    <Box style={{ width: '95%', margin: 'auto' }} id='skillpage' boxShadow={'2xl'} >
       <Heading fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{transform: 'scale(1.05)', }}>SKILLS</Heading>
       <hr />
       <br /> <br />
-      <Wrap>
+      <Wrap margin='auto'>
         <WrapItem>
           {/* <Avatar size='2xl' name='Dan Abrahmov' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfgEebD_4C0mQ8UuPnpJsEzbWXwWLs9avo3AKCSOOYvdhpD4-kTkcx2fmV7sAaKitIcFo&usqp=CAU' /> */}
           <Avatar size='2xl'  _hover={{ bg: 'white', size:'3xl',paddingBottom:'10px',transform: 'scale(1.05)' }} name='Dan Abrahmov' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhdFgKwWT0BD32WAPhBz04H7yjV1VMu7axw&usqp=CAU'
@@ -48,7 +48,7 @@ const Skills = () => {
   <Avatar name='Sasuke Uchiha' src='https://bit.ly/broken-link' />
   <Avatar src='https://bit.ly/broken-link' />
 </Stack> */}
-    </div>
+    </Box>
   )
 }
 

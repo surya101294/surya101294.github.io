@@ -16,11 +16,10 @@ import samadhanKendra from '../logo/samadhanKendra.PNG'
 
 const Project = () => {
   return (
-    <div id='projectpage' >
+    <Box id='projectpage' boxShadow={'2xl'} width={'95%'} margin={'auto'}>
     <Heading  fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{transform: 'scale(1.05)', }}>PROJECTS</Heading> <br /><br />    
       <Center    gap={'20px'}  >
-      <Stack  direction={{ base: 'column', md: 'row' }}>
-        
+      <Stack  direction={{ base: 'column', md: 'row' }}>        
           <Center py={12}>
             <Box
               role={'group'}
@@ -79,7 +78,7 @@ const Project = () => {
                 </Text>
 
                 <Stack direction={'row'} align={'center'}>
-                <Link href={'https://github.com/surya101294/delightful-secretary-78'}>
+                <Link href={'https://github.com/surya101294/delightful-secretary-78'} target="_blank">
                   <Button
                     rounded={'full'}
                     // bg={'blue.400'}
@@ -91,7 +90,7 @@ const Project = () => {
                   >
                   </Button>
                   </Link>
-                  <Link href={'https://prismatic-lolly-ef78c1.netlify.app/'}>
+                  <Link href={'https://prismatic-lolly-ef78c1.netlify.app/'} target="_blank">
                   <Button rounded={'full'}>Live</Button>
                   </Link>
                 </Stack>
@@ -155,7 +154,7 @@ const Project = () => {
                 </Text>
 
                 <Stack direction={'row'} align={'center'}>
-                <Link href={'https://github.com/surya101294/craven-government-8390'}>
+                <Link href={'https://github.com/surya101294/craven-government-8390'} target="_blank">
                   <Button
                     rounded={'full'}
                     // bg={'blue.400'}
@@ -167,7 +166,7 @@ const Project = () => {
                   >
                   </Button>
                   </Link>
-                  <Link href={'https://unique-longma-beb0ee.netlify.app/'}>
+                  <Link href={'https://unique-longma-beb0ee.netlify.app/'} target="_blank" >
                   <Button rounded={'full'}>Live</Button>
                   </Link>
                 </Stack>
@@ -231,7 +230,7 @@ const Project = () => {
                 </Text>
 
                 <Stack direction={'row'} align={'center'}>
-                <Link href={'https://github.com/surya101294/Sephora_website_clone'}>
+                <Link href={'https://github.com/surya101294/Sephora_website_clone'} target="_blank">
                   <Button
                     rounded={'full'}
                     // bg={'blue.400'}
@@ -243,7 +242,7 @@ const Project = () => {
                   >
                   </Button>
                   </Link>
-                  <Link href={'https://extraordinary-blini-450159.netlify.app/'}>
+                  <Link href={'https://extraordinary-blini-450159.netlify.app/'} target="_blank">
                   <Button rounded={'full'}>Live</Button>
                   </Link>
                 </Stack>
@@ -253,7 +252,7 @@ const Project = () => {
          
         </Stack>
       </Center>
-    </div>
+    </Box>
   )
 }
 

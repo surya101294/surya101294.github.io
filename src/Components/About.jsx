@@ -6,17 +6,20 @@ import {
   Image,
   Stack,
   Text,
-  useBreakpointValue,Link
+  useBreakpointValue,Link , Box
 } from '@chakra-ui/react';
 import { MdEmail } from 'react-icons/md';
+import Calender from './Calender';
 
 export default function SplitScreen() {
   return (
-    <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }} id='aboutpage'>
+    <Box boxShadow={'2xl'} width={'95%'} margin={'auto'}>
+    <Heading fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{transform: 'scale(1.05)', }}>ABOUT</Heading>
+    <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }} id='aboutpage' >
       <Flex p={8} flex={1} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
-            <Text
+            {/* <Text
               as={'span'}
               position={'relative'}
               _after={{
@@ -32,7 +35,7 @@ export default function SplitScreen() {
               _hover={{transform: 'scale(1.05)', }}
               >
               About Me
-            </Text>
+            </Text> */}
             <br />{' '}
             <br />
             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'blue.400'} lineHeight={'25px'} >
@@ -93,7 +96,11 @@ export default function SplitScreen() {
           _hover={{transform: 'scale(1.05)', }}
           src={logo}
         />
-      </Flex>
+      </Flex>   
     </Stack>
+    <Calender/>
+    <br />
+    <br />
+    </Box>
   );
 }

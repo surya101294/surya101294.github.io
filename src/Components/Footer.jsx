@@ -72,6 +72,7 @@ import {
           align={'center'}>
           {/* <Logo /> */}
           <Stack direction={'row'} spacing={6}>
+            <HashLink to={'#homepage'} smooth>Home</HashLink>
             <HashLink to={'#aboutpage'} smooth>About</HashLink>
             <HashLink to={'#skillpage'}>Skill</HashLink>
             <HashLink to={'#projectpage'}>Project</HashLink>
