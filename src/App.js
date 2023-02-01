@@ -7,6 +7,8 @@ import Skills from './Components/Skills';
 import Home from './Pages/Home';
 import Project from './Components/Project';
 import  Calender  from './Components/Calender';
+import Skill from './Components/Skill';
+// import Stats from './Components/Stats'
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
      <Home/>
     <About/>
     <Project/>
-    <Skills/>
+    <Skill/>
     <Contact/>
     <Footer/> 
     </div>

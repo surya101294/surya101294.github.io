@@ -13,66 +13,55 @@ import { SiGmail } from 'react-icons/si'
 // import { MdEmail ,MdOutgoingMail } from 'react-icons/md';
 
 export default function Home() {
-  
+
   return (
-  // <Center>
-    <Box boxShadow={'2xl'} width={'95%'} margin={'auto'} id='homepage' >
-    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+    // <Center>
+    <Box boxShadow={'2xl'} width={'100%'} margin={'auto'} id='homepage' >
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
 
-      <Flex flex={1} paddingTop={'50px'} justifyContent={'center'}>
-        <Image
-          alt={'Login Image'}
-          // objectFit={'cover'}
-          // borderRadius='full'
-          boxSize='400px'
-          height={'400px'}
-          _hover={{transform: 'scale(1.05)', }}
-          src={'https://prepinsta.com/wp-content/uploads/2021/06/programmer.webp'}
-        />
+        <Flex flex={1} paddingTop={'50px'} justifyContent={'center'}>
+          <Image
+            alt={'Image'}
+            // objectFit={'cover'}
+            // borderRadius='full'
+            boxSize='450px'
+            height={'500px'}
+            // width={'500px'}
+            // paddingTop={'20px'}
+            _hover={{ transform: 'scale(1.05)', }}
+            src={'https://prepinsta.com/wp-content/uploads/2021/06/programmer.webp'}
+            // src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4VQH8t2WTz4MtfMxYIDz5hWpOSsprqRyT2MWBJlsNK55BCesvJrdllHsjSD8UnMoasI&usqp=CAU'}
+          />
 
-      </Flex>
-      <Flex p={8} flex={1} align={'center'} justify={'center'}>
-        <Stack spacing={6} w={'full'} maxW={'lg'}>
-          <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{transform: 'scale(1.05)', }}>
-            {/* <Text
-                            as={'span'}
-                            position={'relative'}
-                            _after={{
-                                content: "''",
-                                width: 'full',
-                                height: useBreakpointValue({ base: '20%', md: '30%' }),
-                                position: 'absolute',
-                                bottom: 1,
-                                left: 0,
-                                //   bg: 'blue.400',
-                                zIndex: -1,
-                            }}>
-                            Hello 👋
-                        </Text> */}
-            <br />{' '}
-            {/* <Text color={'blue.400'} as={'span'} fontSize={{ base: 'xl', md: '2xl', lg: '4xl' }}>
-                            
-                            Hello 👋
-                        </Text> */}
-            Hello 👋
-          </Heading>
-          <Heading lineHeight='tall'>
-            <Highlight
-              query={['Surya', 'Prakash', 'Pokhriyal']}
-              styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.100' }}
+        </Flex>
+        <Flex p={4} flex={1} align={'center'} justifyContent={'center'}>
+          <Stack spacing={6} w={'full'} maxW={'lg'}>
+            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{ transform: 'scale(1.05)', }}>
+              <br />{' '}
+              Hello 👋
+            </Heading>
+            <Heading lineHeight='tall'>
+              <Highlight
+                query={['Surya', 'Prakash', 'Pokhriyal']}
+                styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.500' }}
+                fontFamily={'lorum'}
+                
+              >
+                I'm Surya Prakash Pokhriyal
+              </Highlight>
+            </Heading>
+            <Text fontSize={{ base: 'lg', lg: '2xl' }} color={'grey.700'} 
+            fontFamily={'lorum'}
             >
-              I'm Surya Prakash Pokhriyal
-            </Highlight>
-          </Heading>
-          <Text fontSize={{ base: 'lg', lg: '2xl' }} color={'grey.700'}>
-          Knack of building application with frontend operations
-          </Text>
-          <Stack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'30px'} align={'center'}>
-            {/* <Link href={'https://github.com/surya101294'}> */}
-            {/* <Link href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'} smooth 
+              Knack of building application with frontend operations
+            </Text>
+            <Center>
+            <Stack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'30px'} align={'center'}>
+              {/* <Link href={'https://github.com/surya101294'}> */}
+              {/* <Link href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'}  
             
             >           */}
-            {/* <a href="Surya_Prakash_Pokhriyal_Resume.pdf" download='Surya_Prakash_Pokhriyal_Resume.pdf' >
+              {/* <a href="Surya_Prakash_Pokhriyal_Resume.pdf" download='Surya_Prakash_Pokhriyal_Resume.pdf' >
             <Button
               // rounded={'full'}
               bg={'blue.400'}
@@ -84,40 +73,47 @@ export default function Home() {
                Download Resume
             </Button>
             </a> */}
-            {/* </Link> */}
-            <Stack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'30px'} align={'center'}></Stack>
-            <Link href={'https://github.com/surya101294'}>
-              <Button
-                variant="ghost"
-                size="lg"
-                isRound={true}
-                _hover={{ bg: '#0D74FF' }}
-                // borderRadius='full'
-                boxSize='40px' leftIcon={<FaGithub size="30px" />}>  </Button>
-            </Link>
-            <Link href={'https://www.linkedin.com/in/surya-prakash-pokhriyal/'}>
-              <Button
-                variant="ghost"
-                size="lg"
-                isRound={true}
-                _hover={{ bg: '#0D74FF' }}
-                boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />}>
-              </Button>
-            </Link>
-            <Link href={'mailto:surya101294@gmail.com'}>
-              <Button
-                variant="ghost"
-                size="lg"
-                isRound={true}
-                _hover={{ bg: '#0D74FF' }}
-                boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}> </Button>
-            </Link>
-            {/* <Button rounded={'full'}>How It Works</Button> */}
+              {/* </Link> */}
+              <Stack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'30px'} align={'center'}></Stack>
+              <Link href={'https://github.com/surya101294'} target="_blank">
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  isround='true'
+                  // _hover={{ bg: '#0D74FF' }}
+                  _hover={{  bg: '#15f4ee',transform: 'scale(1.05)' }}
+                  border="2px solid #15f4ee"
+                  // borderRadius='full'
+                  boxSize='40px' colorScheme='Github' leftIcon={<FaGithub size="30px" />}>  </Button>
+              </Link>
+              <Link href={'https://www.linkedin.com/in/surya-prakash-pokhriyal/' } target="_blank">
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  isround='true'
+                  // _hover={{ bg: '#0D74FF' }}
+                  _hover={{  bg: '#15f4ee',transform: 'scale(1.05)' }}
+                  border="2px solid #15f4ee"
+                  boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />}>
+                </Button>
+              </Link>
+              <Link href={'mailto:surya101294@gmail.com'} target="_blank">
+                <Button
+                  variant="ghost"
+                  size="lg"
+                  isround='true'
+                  // _hover={{ bg: '#0D74FF' }}
+                  _hover={{  bg: '#15f4ee',transform: 'scale(1.05)' }}
+                  border="2px solid #15f4ee"
+                  boxSize='40px' colorScheme='Gmail' leftIcon={< SiGmail size="30px" />}> </Button>
+              </Link>
+              {/* <Button rounded={'full'}>How It Works</Button> */}
+            </Stack>
+          </Center>
           </Stack>
-        </Stack>
-      </Flex>
-    </Stack>
-  {/* </Center> */}
+        </Flex>
+      </Stack>
+      {/* </Center> */}
     </Box>
   );
 }

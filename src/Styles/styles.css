@@ -1,0 +1,14 @@
+.statsdiv {
+  width: "80%";
+  height: "300px";
+  display: "flex";
+  margin: "auto";
+  gap: '20px';
+  border: '1px solid red';
+}
+
+
+
+@media screen and (max-width: 950px) {}
+
+/* fontSize={{ base: 'md', lg: 'lg' }} */

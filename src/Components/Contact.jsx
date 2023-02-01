@@ -1,11 +1,17 @@
+import { useState } from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 import {
+  useToast,
   Container,
   Flex,
   Box,
   Heading,
   Text,
+  IconButton,
   Button,
   VStack,
+  HStack,
   Wrap,
   WrapItem,
   FormControl,
@@ -13,19 +19,17 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
-  Textarea,
-  useToast, Stack, Link
+  Textarea, Link, Center
 } from '@chakra-ui/react';
 import {
   MdPhone,
   MdEmail,
   MdLocationOn,
+  MdFacebook,
   MdOutlineEmail,
 } from 'react-icons/md';
-import { BsPerson } from 'react-icons/bs';
-import { useState } from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import { SiGmail } from 'react-icons/si'
+import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+
 export default function Contact() {
   const toast = useToast()
 
@@ -39,34 +43,32 @@ export default function Contact() {
 
     {
       name && email && msg ?
-      toast({
-        title: 'Message Delievered',
-        description: "Thankyou for Contacting..",
-        status: 'success',
-        duration: 9000,
-        isClosable: true,
-      })
-      :
-      toast({
-        title: 'Please Fill the details',
-        description: "",
-        status: 'error',
-        duration: 9000,
-        isClosable: true,
-      })
+        toast({
+          title: 'Message Delievered',
+          description: "Thankyou for Contacting..",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+        :
+        toast({
+          title: 'Please Fill the details',
+          description: "",
+          status: 'error',
+          duration: 9000,
+          isClosable: true,
+        })
     }
-
     setName("")
     setEmail("")
     setMsg("")
   }
-  // bg="#9DC4FB"
-  // <Box boxShadow={'2xl'} width={'95%'} margin={'auto'}></Box>
   return (
-    <Container  maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' boxShadow={'2xl'} width={'95%'} margin={'auto'}>
+    <Container maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' boxShadow={'2xl'} width={'95%'} margin={'auto'}
+      fontFamily={'lorum'}>
       <Flex>
         <Box
-        _hover={{transform: 'scale(1.01)', }}
+          _hover={{ transform: 'scale(1.01)', }}
           // bg="#02054B"
           border={'2px'}
           borderColor={'blue.200'}
@@ -78,101 +80,164 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Get In Touch</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Heading fontFamily={'lorum'} 
+                   _hover={{transform: 'scale(1.05)' }}>Get In Touch</Heading>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} fontFamily={'lorum'} color="gray.500">
                     Got a project?<br /> Reach out and let's work together on something exciting.<br />
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                    <VStack pl={0} spacing={3} alignItems="flex-start">
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="200px"
-                        variant="ghost"
-                        // color="#DCE2FF"
-                        color="black"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +91-7503766953
-                      </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="200px"
-                        variant="ghost"
-                        // color="#DCE2FF"
-                        color="black"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        surya101294@gmail.com
-                      </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="200px"
-                        variant="ghost"
-                        // color="#DCE2FF"
-                        color="black"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdLocationOn color="black" size="20px" />}>
-                        Ghaziabad, UttarPradesh, India
-                      </Button>
-                    </VStack>
+                    <Center>
+                      <VStack pl={0} spacing={3} alignItems="flex-start" >
+                        <a href="tel:+91-7503766953" target="_blank">
+                          <Button
+                            size="md"
+                            height="48px"
+                            width="200px"
+                            variant="ghost"
+                            // color="#DCE2FF"
+                            color="black"
+                            _hover={{  border: '2px solid #15f4ee',transform: 'scale(1.05)' }}
+                             // borderColor={'#15f4ee'}
+                            // borderWidth='2px' border: '2px solid #1C6FEB'
+                            leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                            fontFamily={'lorum'}>
+                            +91-7503766953
+                          </Button>
+                        </a>
+                        <Link href={'mailto:surya101294@gmail.com'} target="_blank">
+                          <Button
+                            size="md"
+                            height="48px"
+                            width="200px"
+                            variant="ghost"
+                            // color="#DCE2FF"
+                            color="black"
+                            _hover={{  border: '2px solid #15f4ee',transform: 'scale(1.05)' }}
+                            leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                            fontFamily={'lorum'}>
+                            surya101294@gmail.com
+                          </Button>
+                        </Link>
+                        < a href='https://www.google.com/maps/place/Lajpat+Nagar,+Sector+4,+Rajendra+Nagar,+Ghaziabad,+Uttar+Pradesh/@28.6833364,77.3641919,16z/data=!3m1!4b1!4m5!3m4!1s0x390cfa7d62d07ecd:0x21f2b62ddb737818!8m2!3d28.6825594!4d77.3690875' target="_blank" >
+                          <Button
+                            size="md"
+                            height="48px"
+                            width="200px"
+                            variant="ghost"
+                            color="black"
+                            _hover={{  border: '2px solid #15f4ee',transform: 'scale(1.05)' }}
+                            leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+                            fontFamily={'lorum'}>
+                            Ghaziabad, UttarPradesh
+                          </Button>
+                        </a>
+                      </VStack>
+                    </Center>
                   </Box>
-                  <Stack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'30px'} align={'center'}>
-                    {/* <Link href={'https://github.com/surya101294'}> */}
-                    <Button
-                      // rounded={'full'}
-                      bg={'blue.400'}
-                      color={'white'}
-                      _hover={{
-                        bg: 'blue.500',
-                      }}>
-                      Resume
-                    </Button>
-                    {/* </Link> */}
-                    <Link href={'https://github.com/surya101294'}>
-                      <Button
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        // borderRadius='full'
-                        boxSize='40px' leftIcon={<FaGithub size="30px" />}>  </Button>
-                    </Link>
-                    <Link href={'https://www.linkedin.com/in/surya-prakash-pokhriyal/'}>
-                      <Button
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />}>
-                      </Button>
-                    </Link>
-                    <Link href={'mailto:surya101294@gmail.com'}>
-                      <Button
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
-                        boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}> </Button>
-                    </Link>
-                    {/* <Button rounded={'full'}>How It Works</Button> */}
-                  </Stack>
+                  {/* <HStack
+                    mt={{ lg: 10, md: 10 }}
+                    spacing={5}
+                    px={5}
+                    alignItems="flex-start">
+                    <IconButton
+                      aria-label="facebook"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<MdFacebook size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="github"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsGithub size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="discord"
+                      variant="ghost"
+                      size="lg"
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsDiscord size="28px" />}
+                    />
+                  </HStack> */}
+                  <Center>
+                    <HStack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'10px'} align={'center'}>
+                      {/* <Link href={'https://github.com/surya101294'}> */}
+                      <Link href="Surya_Prakash_Pokhriyal_Resume.pdf" smooth="true"
+                        download={'Surya_Prakash_Pokhriyal_Resume.pdf'} textDecoration='null'
+                      >
+                        <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
+                          onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
+                          download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+                          textDecoration='null'
+                          target="_blank"
+                        >
+                          <Button
+                            // rounded={'full'}
+                            bg={'blue.400'}
+                            color={'white'}
+                            _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                            borderColor={'#15f4ee'}
+                            borderWidth='2px'
+                            fontFamily={'lorum'}>
+                            Resume
+                          </Button>
+                        </a>
+                      </Link>
+                      <Link href={'https://github.com/surya101294'} target="_blank">
+                        <Button
+                          variant="ghost"
+                          size="lg"
+                          isround="true"
+                          _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                          // borderRadius='full'
+                          borderColor={'#15f4ee'}
+                          borderWidth='1px'
+                          boxSize='40px' leftIcon={<FaGithub size="30px" />}>  </Button>
+                      </Link>
+                      <Link href={'https://www.linkedin.com/in/surya-prakash-pokhriyal/'} target="_blank">
+                        <Button
+                          variant="ghost"
+                          size="lg"
+                          isround="true"
+                          _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                          borderColor={'#15f4ee'}
+                          borderWidth='1px'
+                          boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />} >
+                        </Button>
+                      </Link>
+                      <Link href={'mailto:surya101294@gmail.com'} target="_blank">
+                        <Button
+                          variant="ghost"
+                          size="lg"
+                          isround="true"
+                          _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                          borderColor={'#15f4ee'}
+                          borderWidth='1px'
+                          boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}> </Button>
+                      </Link>
+                      {/* <Button rounded={'full'}>How It Works</Button> */}
+                    </HStack>
+                  </Center>
                 </Box>
               </WrapItem>
               <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
-                    <VStack spacing={5}>
+                    <VStack spacing={5} fontFamily={'lorum'}>
                       <FormControl id="name" isRequired>
-                        <FormLabel>Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7" >
+                        <FormLabel >Your Name</FormLabel>
+                        <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" isRequired onChange={() => setName(true)} />
+                          <Input type="text" size="md"
+                            isRequired onChange={() => setName(true)} />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name" isRequired>
@@ -182,27 +247,31 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md" isRequired onChange={() => setEmail(true)} />
+                          <Input type="text" size="md"
+                            isRequired onChange={() => setEmail(true)} />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name" isRequired>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel  >Message</FormLabel>
                         <Textarea
                           borderColor="gray.300"
                           _hover={{
                             borderRadius: 'gray.300',
-
                           }}
-                          placeholder="message" onChange={() => setMsg(true)}
+                          placeholder="message"
+                          onChange={() => setMsg(true)}
                         />
                       </FormControl>
-                      <FormControl id="name" >
+                      <FormControl id="name" float="right">
                         <Button
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
-                          _hover={{}}
-                          onClick={handleSubmit}  >
+                          _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                          borderColor={'#15f4ee'}
+                          borderWidth='2px'
+                          onClick={handleSubmit}
+                        >
                           Send Message
                         </Button>
                       </FormControl>
