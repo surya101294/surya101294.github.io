@@ -45,7 +45,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box bg={useColorModeValue('gray.300', 'gray.900')} pos="fixed" w="100%" zIndex={2} fontFamily={'lorum'} >
+    <Box bg={useColorModeValue('gray.200', 'gray.900')} pos="fixed" w="100%" zIndex={2} fontFamily={'lorum'} >
       <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
         <IconButton
           size={'md'}
@@ -57,7 +57,9 @@ export default function Navbar() {
         <HStack spacing={8} alignItems={'center'}>
           {/* <Heading as='h2' size={'lg'} paddingRight={'20px'} color={'blue.700'} ><Highlight query='S.P' styles={{ px: '1', py: '1', bg: 'blue.100', rounded: 'full', color: 'blue.400' }}>S.PPokhriyal</Highlight> </Heading> */}
           <div style={{ margin: "10px", paddingLeft: '25px' }} >
-            <img src={sign} alt="pic" height={'40px'} width={'150px'} padding-left={'10px'}  />
+            <img
+              src={sign}
+              alt="pic" height={'40px'} width={'150px'} padding-left={'10px'} />
           </div>
           <HStack
             as={'nav'}
@@ -78,23 +80,23 @@ export default function Navbar() {
                   <button><HiHome /> </button>
                   HOME
                 </Heading></HashLink>
-              <HashLink to={'#aboutpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'} 
-              _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+              <HashLink to={'#aboutpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'}
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
                 <button><FaUserAlt /> </button>
                 ABOUT
               </Heading></HashLink>
-              <HashLink to={'#skillpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" 
-              _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+              <HashLink to={'#skillpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true"
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
                 <button><GiSkills /> </button>
                 SKILL
               </Heading></HashLink>
               <HashLink to={'#projectpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'}
-              _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
                 <button><AiOutlineFundProjectionScreen /> </button>
                 PROJECT
               </Heading></HashLink>
-              <HashLink to={'#contactpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" 
-              _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+              <HashLink to={'#contactpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true"
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
                 <button><HiChatAlt2 /> </button>
                 CONTACT
               </Heading></HashLink>
@@ -110,16 +112,16 @@ export default function Navbar() {
                 target="_blank"
               > */}
               <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-               onClick={()=>window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")} 
-               download={'Surya_Prakash_Pokhriyal_Resume.pdf'} 
-               textDecoration='null' 
-               target="_blank"
+                onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
+                download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+                textDecoration='null'
+                target="_blank"
               >
                 <Heading as='h4' size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" color={'teal'}
                   _hover={{ border: ' 2px solid teal', transform: 'scale(1.10)' }}>
-                <button><FcFile /> </button>
-                RESUME
-              </Heading>
+                  <button><FcFile /> </button>
+                  RESUME
+                </Heading>
                 {/* <Heading as='h4' size={'md'} color={'teal.500'}>
                   <Highlight query='Resume' styles={{ px: '1', py: '1', bg: 'teal.500', rounded: 'full' }} smooth="true" fontFamily={'lorum'}>
                     RESUME
@@ -146,6 +148,7 @@ export default function Navbar() {
                 //  height={'200px'} width={'200px'}
                 size={'sm'}
                 src={logo}
+              // src={"https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F3906266-S-Tech-Logo-Icons&psig=AOvVaw2mLck0xF43DNIzDp7hxL-M&ust=1675370791557000&source=images&cd=vfe&ved=2ahUKEwia77nYmPX8AhW8wjgGHbbiBMgQjRx6BAgAEAo"}
               />
             </MenuButton>
             {/* <MenuList>

@@ -11,8 +11,8 @@ root.render(
   <BrowserRouter>
     <ChakraProvider>
       <App />
-    </ChakraProvider>
-  </BrowserRouter>
+   </ChakraProvider>
+   </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

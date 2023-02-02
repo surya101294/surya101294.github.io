@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import {
@@ -29,6 +29,9 @@ import {
   MdOutlineEmail,
 } from 'react-icons/md';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import { EmailJSResponseStatus } from '@emailjs/browser';
+
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const toast = useToast()
@@ -37,9 +40,29 @@ export default function Contact() {
   const [email, setEmail] = useState(false)
   const [msg, setMsg] = useState(false)
 
+  const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log("clicked")
+
+    if(name && email && msg )
+    {
+      emailjs.sendForm(
+      "service_95mup4r",
+      "template_vr2k5q1",  //template id
+      form.current,
+      "OAAgS4baLv5nwlbcO"   //user id- api
+    )
+    // .then(
+    //   (result) => {
+    //     alert("Message sent successfully");
+    //     console.log(result.text);
+    //   })
+      // .catch(error) => {
+      //   alert("Failed to send the msg");
+      //   console.log(error.text);
+      // }  
+    }
 
     {
       name && email && msg ?
@@ -50,6 +73,8 @@ export default function Contact() {
           duration: 9000,
           isClosable: true,
         })
+
+
         :
         toast({
           title: 'Please Fill the details',
@@ -229,6 +254,8 @@ export default function Contact() {
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5} fontFamily={'lorum'}>
+                    <form onSubmit={handleSubmit}
+                          ref={form}>
                       <FormControl id="name" isRequired>
                         <FormLabel >Your Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
@@ -236,7 +263,7 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md"
+                          <Input type="text" size="md" name='user_name'
                             isRequired onChange={() => setName(true)} />
                         </InputGroup>
                       </FormControl>
@@ -247,18 +274,19 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md"
+                          <Input type="text" size="md" name='user_email'
                             isRequired onChange={() => setEmail(true)} />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name" isRequired>
                         <FormLabel  >Message</FormLabel>
-                        <Textarea
+                        <Input
                           borderColor="gray.300"
+                          height={'120px'}
                           _hover={{
                             borderRadius: 'gray.300',
                           }}
-                          placeholder="message"
+                           name='message'
                           onChange={() => setMsg(true)}
                         />
                       </FormControl>
@@ -271,11 +299,14 @@ export default function Contact() {
                           borderColor={'#15f4ee'}
                           borderWidth='2px'
                           onClick={handleSubmit}
+                          ref={form}
                         >
                           Send Message
                         </Button>
                       </FormControl>
+                      </form>
                     </VStack>
+                    
                   </Box>
                 </Box>
               </WrapItem>

@@ -54,8 +54,8 @@ const Project = () => {
                 }}
                 _groupHover={{
                   _after: {
-                    filter: 'blur(50px)',
-                    transform: 'scale(1.2)',
+                    filter: 'blur(20px)',
+                    transform: 'scale(1.05)',
                   },
                 }}>
                 <Image
@@ -136,7 +136,7 @@ const Project = () => {
                 _groupHover={{
                   _after: {
                     filter: 'blur(20px)',
-                    transform: 'scale(1.2)',
+                    transform: 'scale(1.05)',
                   },
                 }}>
                 <Image
@@ -214,13 +214,13 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${samadhanKendra})`,
-                  filter: 'blur(15px)',
+                  filter: 'blur(35px)',
                   zIndex: -1,
                 }}
                 _groupHover={{
                   _after: {
                     filter: 'blur(20px)',
-                    transform: 'scale(1.2)',
+                    transform: 'scale(1.05)',
                   },
                 }}>
                 <Image
@@ -300,7 +300,7 @@ const Project = () => {
                 _groupHover={{
                   _after: {
                     filter: 'blur(20px)',
-                    transform: 'scale(1.2)',
+                    transform: 'scale(1.05)',
                   },
                 }}>
                 <Image
