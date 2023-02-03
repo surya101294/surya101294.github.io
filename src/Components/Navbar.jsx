@@ -4,7 +4,6 @@ import {
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -12,11 +11,11 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack, useColorMode,
-  Heading, Highlight
+  Heading
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { AiOutlineHome, AiFillContacts, AiOutlineFundProjectionScreen } from 'react-icons/ai';
+import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
 import { FaUserAlt } from 'react-icons/fa';
 import { FcFile } from 'react-icons/fc';
@@ -101,16 +100,6 @@ export default function Navbar() {
                 CONTACT
               </Heading></HashLink>
 
-
-              {/* <Link
-                // href="Surya_Prakash_Pokhriyal_Resume.pdf"
-                href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'}
-                smooth="true"
-
-                download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
-                textDecoration='null'
-                target="_blank"
-              > */}
               <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
                 onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
                 download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
@@ -122,14 +111,8 @@ export default function Navbar() {
                   <button><FcFile /> </button>
                   RESUME
                 </Heading>
-                {/* <Heading as='h4' size={'md'} color={'teal.500'}>
-                  <Highlight query='Resume' styles={{ px: '1', py: '1', bg: 'teal.500', rounded: 'full' }} smooth="true" fontFamily={'lorum'}>
-                    RESUME
-                  </Highlight>
-                </Heading> */}
               </a>
             </Stack>
-            {/* </Heading> */}
           </HStack>
         </HStack>
         <Flex alignItems={'center'} paddingRight={'20px'}>
@@ -164,32 +147,47 @@ export default function Navbar() {
       {isOpen ? (
         <Box pb={4} display={{ md: 'none' }}>
           <Stack as={'nav'} spacing={4}>
-            {/* {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
-            ))} */}
-            <HashLink to={'#homepage'} ><Heading as='h4' size={'md'} gap={'30px'} smooth="true" >
-              <button><HiHome /> </button>
-              Home
-            </Heading></HashLink>
-            <HashLink to={'#aboutpage'} ><Heading as='h4' size={'md'} gap={'30px'} smooth="true" >
-              <button><FaUserAlt />  </button>
-              About
-            </Heading></HashLink>
-            <HashLink to={'#skillpage'} ><Heading as='h4' size={'md'} gap={'30px'} smooth="true" >
-              <button><GiSkills /> </button>
-              Skill
-            </Heading></HashLink>
-            <HashLink to={'#projectpage'} ><Heading as='h4' size={'md'} gap={'30px'} smooth="true" >
-              <button><AiOutlineFundProjectionScreen /> </button>
-              Project
-            </Heading></HashLink>
-            <HashLink to={'#contactpage'} ><Heading as='h4' size={'md'} gap={'30px'} smooth="true" >
-              <button><HiChatAlt2 /> </button>
-              Contact
-            </Heading></HashLink>
-            <Link href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'} target="_blank" ><Heading as='h4' size={'md'} color={'blue'}><Highlight query='Resume' styles={{ px: '1', py: '1', bg: '#146ebe', rounded: 'full' }} smooth="true" >
-              Resume
-            </Highlight></Heading></Link>
+             <HashLink to={'#homepage'} >
+                <Heading as='h6' size={'md'} color={'gray.700'} gap={'30px'} smooth="true"
+                  fontFamily={'lorum'}
+                  _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+                  <button><HiHome /> </button>
+                  HOME
+                </Heading></HashLink>
+              <HashLink to={'#aboutpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'}
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+                <button><FaUserAlt /> </button>
+                ABOUT
+              </Heading></HashLink>
+              <HashLink to={'#skillpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true"
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+                <button><GiSkills /> </button>
+                SKILL
+              </Heading></HashLink>
+              <HashLink to={'#projectpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'}
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+                <button><AiOutlineFundProjectionScreen /> </button>
+                PROJECT
+              </Heading></HashLink>
+              <HashLink to={'#contactpage'} ><Heading as='h4' color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true"
+                _hover={{ border: ' 2px solid gray', transform: 'scale(1.02)' }}>
+                <button><HiChatAlt2 /> </button>
+                CONTACT
+              </Heading></HashLink>
+
+              <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
+                onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
+                download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+                textDecoration='null'
+                target="_blank"
+              >
+                <Heading as='h4' size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" color={'teal'}
+                  _hover={{ border: ' 2px solid teal', transform: 'scale(1.10)' }}>
+                  <button><FcFile /> </button>
+                  RESUME
+                </Heading>
+                
+              </a>
           </Stack>
         </Box>
       ) : null}

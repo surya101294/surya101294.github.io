@@ -8,7 +8,6 @@ import {
   Box,
   Heading,
   Text,
-  IconButton,
   Button,
   VStack,
   HStack,
@@ -19,17 +18,15 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
-  Textarea, Link, Center
+  Link, Center
 } from '@chakra-ui/react';
 import {
   MdPhone,
   MdEmail,
   MdLocationOn,
-  MdFacebook,
   MdOutlineEmail,
 } from 'react-icons/md';
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
-import { EmailJSResponseStatus } from '@emailjs/browser';
+import { BsPerson } from 'react-icons/bs';
 
 import emailjs from "@emailjs/browser";
 
@@ -113,7 +110,7 @@ export default function Contact() {
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <Center>
                       <VStack pl={0} spacing={3} alignItems="flex-start" >
-                        <a href="tel:+91-7503766953" target="_blank">
+                        <a href="tel:+91-7503766953">
                           <Button
                             size="md"
                             height="48px"

@@ -7,13 +7,12 @@ import {
   Heading,
   Text,
   Stack,
-  Image, Button, Link, HStack
+  Image, Button, Link
 } from '@chakra-ui/react';
 import coolMonk from '../logo/coolMonk.PNG'
 import sephora from '../logo/sephora.PNG'
 import samadhanKendra from '../logo/samadhanKendra.PNG'
 import sastaDeal from '../logo/sastaDeal.PNG'
-
 
 const Project = () => {
   return (
@@ -21,7 +20,7 @@ const Project = () => {
       <Heading fontFamily={'lorum'} fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }}>PROJECTS</Heading> <br /><br />
       <hr />
       <Center>
-        <Stack direction={{ base: 'column', md: 'row' }} gap={'20px'} >
+        <Stack direction={{ base: 'column', md: 'row' }} gap={'25px'} >
           <Center py={12}>
             <Box
               role={'group'}
@@ -185,8 +184,8 @@ const Project = () => {
           </Center>
         </Stack>
       </Center>
-      <Center gap={'20px'}  >
-        <Stack direction={{ base: 'column', md: 'row' }}>
+      <Center  >
+        <Stack direction={{ base: 'column', md: 'row' }} gap={'25px'} >
           <Center py={12}>
             <Box
               role={'group'}

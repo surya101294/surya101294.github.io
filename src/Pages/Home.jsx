@@ -24,8 +24,10 @@ export default function Home() {
             alt={'Image'}
             // objectFit={'cover'}
             // borderRadius='full'
-            boxSize='450px'
-            height={'500px'}
+            // margin-top="30px"
+            mt={'60px'}
+            boxSize='420px'
+            height={'450px'}
             // width={'500px'}
             // paddingTop={'20px'}
             _hover={{ transform: 'scale(1.05)', }}
