@@ -9,19 +9,22 @@ const Stats = () => {
         <a href="https://github.com/surya101294">
           <Image
            align="left"
-           _hover={{ bg: '#15f4ee', transform: 'scale(1.01)', border:'1px solid gray' }}
+           height={'200px'}
+           _hover={{ bg: '#15f4ee', transform: 'scale(1.03)', border:'1px solid gray'
+          }}
             src="https://github-readme-streak-stats.herokuapp.com/?user=surya101294"
             alt="surya stats"
           />
         </a>
       </Center>
-
-      <Flex direction={{ base: 'column', md: 'row' }} justifyContent='center' margin='auto' width={'90%'} gap={5} >
+<br/>
+      <Flex direction={{ base: 'column', md: 'row' }} justifyContent='center' margin='auto' width={'90%'}  gap={5} >
         <a href="https://github.com/surya101294">
           <Image
             // align="center"
-           _hover={{ bg: '#15f4ee', transform: 'scale(1.01)', border:'1px solid gray' }}
+           _hover={{ bg: '#15f4ee', transform: 'scale(1.03)', border:'1px solid gray' }}
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=surya101294" alt="surya stats"
+            height={'200px'}
           //launguages
           />
         </a>
@@ -29,8 +32,10 @@ const Stats = () => {
         <a href="https://github.com/surya101294">
           <Image
             // align="left"
-           _hover={{ bg: '#15f4ee', transform: 'scale(1.01)', border:'1px solid gray' }}
+            height={'200px'}
+           _hover={{ bg: 'white', transform: 'scale(1.03)', border:'1px solid gray' }}
             src="https://github-readme-stats.vercel.app/api?username=surya101294&count_private=true&show_icons=true" alt="surya stats" //stats
+            
           />
         </a>
       </Flex>

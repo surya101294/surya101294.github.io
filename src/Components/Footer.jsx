@@ -1,15 +1,11 @@
 import {
   Box,
-  chakra,
   Container,
-  Link,
   Stack,
   Text,
   useColorModeValue,
-  VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-import { ReactNode } from 'react';
+// import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { HashLink } from 'react-router-hash-link';
 
 export default function Footer() {
@@ -35,7 +31,7 @@ export default function Footer() {
             onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
             download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
             textDecoration='null'
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             Resume
           </a>

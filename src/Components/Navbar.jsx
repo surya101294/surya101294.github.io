@@ -104,7 +104,7 @@ export default function Navbar() {
                 onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
                 download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
                 textDecoration='null'
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <Heading as='h4' size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" color={'teal'}
                   _hover={{ border: ' 2px solid teal', transform: 'scale(1.10)' }}>
@@ -179,7 +179,7 @@ export default function Navbar() {
                 onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
                 download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
                 textDecoration='null'
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <Heading as='h4' size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" color={'teal'}
                   _hover={{ border: ' 2px solid teal', transform: 'scale(1.10)' }}>

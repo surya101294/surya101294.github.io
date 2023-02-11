@@ -140,7 +140,7 @@ export default function Contact() {
                             surya101294@gmail.com
                           </Button>
                         </Link>
-                        < a href='https://www.google.com/maps/place/Lajpat+Nagar,+Sector+4,+Rajendra+Nagar,+Ghaziabad,+Uttar+Pradesh/@28.6833364,77.3641919,16z/data=!3m1!4b1!4m5!3m4!1s0x390cfa7d62d07ecd:0x21f2b62ddb737818!8m2!3d28.6825594!4d77.3690875' target="_blank" >
+                        < a href='https://www.google.com/maps/place/Lajpat+Nagar,+Sector+4,+Rajendra+Nagar,+Ghaziabad,+Uttar+Pradesh/@28.6833364,77.3641919,16z/data=!3m1!4b1!4m5!3m4!1s0x390cfa7d62d07ecd:0x21f2b62ddb737818!8m2!3d28.6825594!4d77.3690875' target="_blank" rel="noreferrer">
                           <Button
                             size="md"
                             height="48px"
@@ -196,7 +196,7 @@ export default function Contact() {
                           onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
                           download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
                           textDecoration='null'
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                         >
                           <Button
                             // rounded={'full'}

@@ -24,13 +24,13 @@ import ReactTooltip from "react-tooltip";
   // ...
   // borderShadow:'box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
  return ( 
-     <Box style={{width:'85%', margin:'auto'}} fontFamily={'lorum'}
+     <Box style={{width:'90%', margin:'auto'}} fontFamily={'lorum'}
      _hover={{ transform: 'scale(1.01)' }}>
      <GitHubCalendar 
     username="surya101294" 
     // transformData={selectLastHalfYear} 
     fontSize={12}
-    blockSize={12}
+    blockSize={14}
     style={{margin:'auto', width:'100%'}}
     // hideColorLegend
     // hideTotalCount

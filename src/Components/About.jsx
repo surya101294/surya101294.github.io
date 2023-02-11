@@ -5,13 +5,12 @@ import {
   Heading,
   Image,
   Stack,
-  Text,
-  useBreakpointValue, Link, Box,Center, 
+  Text,Link, Box,Center, 
 } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
 import Calender from './Calender';
 import { MdEmail } from 'react-icons/md';
-import { FaDownload,FaArrowCircleRight } from 'react-icons/fa';
+import { FaDownload} from 'react-icons/fa';
 import Stats from './Stats';
 
 export default function SplitScreen() {
@@ -22,36 +21,17 @@ export default function SplitScreen() {
       <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }}  >
         <Flex p={8} flex={1} justify={'center'}>
           <Stack  w={'full'} maxW={'lg'}>
-            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+            <Heading fontSize={{ base: 'xl', md: 'xl', lg: 'xl' }}
             fontFamily={'lorum'}
             >
-              {/* <Text
-              as={'span'}
-              position={'relative'}
-              _after={{
-                content: "''",
-                width: 'full',
-                height: useBreakpointValue({ base: '20%', md: '30%' }),
-                position: 'absolute',
-                bottom: 1,
-                left: 0,
-                  bg: 'blue.400',
-                zIndex: -1,
-              }}
-              _hover={{transform: 'scale(1.05)', }}
-              fontSize={{ base: 'md', lg: 'lg' }}
-
-              About Me
-            </Text> */}
-              
-              <Text fontSize={{ base: 'md', lg: 'lg' }} color={'blue.400'} lineHeight={'25px'} fontFamily={'lorum'}>
+              {/* <Text fontSize={{ base: 'lg', lg: 'xl' }} color={'blue'} lineHeight={'28px'} fontFamily={'lorum'}> */}
                 I am a Full Stack Web Developer, passionate about building digital products that improve everyday experience for people.
-              </Text>{' '}
+              {/* </Text>{' '} */}
             </Heading>
             <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
             <ArrowRightIcon/>  Currently pursuing web development course from Masai School and ready to work.</Text>
             <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
-              <ArrowRightIcon/>  Have an experience of 1200+ hours of coding and 300+ hours of data structures and algorithms.</Text>
+              <ArrowRightIcon/>  Have an experience of 1200+ hours of coding, 300+ hours of data structures & algorithms and 100+ hours of Soft skills.</Text>
               <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
               <ArrowRightIcon/>  Hands-on Experience of more than 4+ year in Automotive Industry.</Text>
             {/* <Button
@@ -69,7 +49,7 @@ export default function SplitScreen() {
               {/* <Link href="Surya_Prakash_Pokhriyal_Resume.pdf" smooth="true" */}
               <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
                onClick={()=>window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")} 
-               download={'Surya_Prakash_Pokhriyal_Resume.pdf'} textDecoration='null' target="_blank"
+               download={'Surya_Prakash_Pokhriyal_Resume.pdf'} textDecoration='null' target="_blank" rel="noreferrer"
               >
                 <Button
                   // rounded={'full'}

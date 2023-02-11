@@ -1,0 +1,41 @@
+.statsdiv {
+  width: "80%";
+  height: "300px";
+  display: "flex";
+  margin: "auto";
+  gap: '20px';
+  border: '1px solid red';
+}
+
+.social {
+  display: flex;
+  border: 1px solid red;
+  background-color: green;
+  position: fixed;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  /* transform: translate(-290px,0); */
+}
+.social a{
+  color: #fff;
+  background: rgba(0,0,0,0);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin: 5px;
+  padding: 20px;
+  width: 300px;
+  text-align: right;
+  border-radius: 50px;
+  /* transition: 1s; */
+  /* transition-property: transform; */
+}
+.social a:hover{
+  transform: translate(140px,0);
+}
+
+@media screen and (max-width: 950px) {}
+
+/* fontSize={{ base: 'md', lg: 'lg' }} */

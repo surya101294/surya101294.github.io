@@ -12,6 +12,7 @@ import CustomizedTimeline from './Components/Timeline';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import SocialLinks from './Components/SocialLink';
 
 function App() {
   const particlesInit = useCallback(async engine => {
@@ -25,7 +26,7 @@ function App() {
 const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
-  return (
+  return ( 
     <div className="App">
       <Particles
             id="tsparticles"
@@ -53,13 +54,13 @@ const particlesLoaded = useCallback(async container => {
                   },
                   enable: false
                 },
-                fpsLimit: 110,
+                // fpsLimit: 300,
                 interactivity: {
                     events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
+                        // onClick: {
+                        //     enable: true,
+                        //     mode: "push",
+                        // },
                         onHover: {
                             enable: true,
                             mode: "repulse",
@@ -68,11 +69,11 @@ const particlesLoaded = useCallback(async container => {
                     },
                     modes: {
                         push: {
-                            quantity: 8,
+                            quantity: 5,
                         },
                         repulse: {
-                            distance: 150,
-                            duration: 0.5,
+                            distance: 100,
+                            duration: 1,
                         },
                     },
                 },
@@ -97,7 +98,7 @@ const particlesLoaded = useCallback(async container => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
@@ -105,7 +106,7 @@ const particlesLoaded = useCallback(async container => {
                             enable: true,
                             area: 800,
                         },
-                        value: 40,
+                        value: 30,
                     },
                     opacity: {
                         value: 0.4,
@@ -114,20 +115,21 @@ const particlesLoaded = useCallback(async container => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 7 },
+                        value: { min: 1, max: 6 },
                     },
                 },
                 detectRetina: true,
             }} />
       <Navbar />
      <Home/>
+     {/* <SocialLinks/> */}
     <About/>
     {/* <CustomizedTimeline/> */}
     <Project/>
     <Skill/>
     <Contact/>
     <Footer/>
-    </div>
+        </div>
   );
 }
 export default App;

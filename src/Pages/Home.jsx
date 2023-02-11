@@ -28,10 +28,14 @@ export default function Home() {
             mt={'60px'}
             boxSize='420px'
             height={'450px'}
-            // width={'500px'}
+            width={'80%'}
+            margin={'auto'}
             // paddingTop={'20px'}
             _hover={{ transform: 'scale(1.05)', }}
-            src={'https://prepinsta.com/wp-content/uploads/2021/06/programmer.webp'}
+            // src={'https://prepinsta.com/wp-content/uploads/2021/06/programmer.webp'}
+            src={'https://t4.ftcdn.net/jpg/05/61/86/17/360_F_561861716_VQ4qwquLrW7yyqV7pmuG4jxJIqBklsfp.jpg'}
+            // src={'https://img.etimg.com/thumb/height-450,width-600,imgsize-65126,msid-88634302/.jpg'}
+            // src={'https://thumbs.dreamstime.com/b/internet-information-technology-businessman-hand-showing-concept-75784736.jpg'}
             // src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4VQH8t2WTz4MtfMxYIDz5hWpOSsprqRyT2MWBJlsNK55BCesvJrdllHsjSD8UnMoasI&usqp=CAU'}
           />
 
@@ -82,9 +86,11 @@ export default function Home() {
                   variant="ghost"
                   size="lg"
                   isround='true'
+                  // bg= {'teal.500'}
+                  // border={'teal.500'}
                   // _hover={{ bg: '#0D74FF' }}
                   _hover={{  bg: '#15f4ee',transform: 'scale(1.05)' }}
-                  border="2px solid #15f4ee"
+                  border="2px solid teal"
                   // borderRadius='full'
                   boxSize='40px' colorScheme='Github' leftIcon={<FaGithub size="30px" />}>  </Button>
               </Link>
@@ -94,8 +100,9 @@ export default function Home() {
                   size="lg"
                   isround='true'
                   // _hover={{ bg: '#0D74FF' }}
+                  // bg= {'teal.500'}
                   _hover={{  bg: '#15f4ee',transform: 'scale(1.05)' }}
-                  border="2px solid #15f4ee"
+                  border="2px solid teal"
                   boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />}>
                 </Button>
               </Link>
@@ -105,8 +112,9 @@ export default function Home() {
                   size="lg"
                   isround='true'
                   // _hover={{ bg: '#0D74FF' }}
+                  // bg= {'teal.500'}
                   _hover={{  bg: '#15f4ee',transform: 'scale(1.05)' }}
-                  border="2px solid #15f4ee"
+                  border="2px solid teal"
                   boxSize='40px' colorScheme='Gmail' leftIcon={< SiGmail size="30px" />}> </Button>
               </Link>
               {/* <Button rounded={'full'}>How It Works</Button> */}
