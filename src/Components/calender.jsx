@@ -25,7 +25,8 @@ import ReactTooltip from "react-tooltip";
   // borderShadow:'box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
  return ( 
      <Box style={{width:'90%', margin:'auto'}} fontFamily={'lorum'}
-     _hover={{ transform: 'scale(1.01)' }}>
+     _hover={{ transform: 'scale(1.01)' }}
+     >
      <GitHubCalendar 
     username="surya101294" 
     // transformData={selectLastHalfYear} 

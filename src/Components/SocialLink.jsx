@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import styles from '../Styles/SocialLink.module.css'
-import { Box } from "@chakra-ui/react";
 const SocialLinks = () => {
   const links = [
     {

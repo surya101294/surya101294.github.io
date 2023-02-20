@@ -42,19 +42,18 @@ export default function Contact() {
     e.preventDefault()
     console.log("clicked")
 
-    if(name && email && msg )
-    {
+    if (name && email && msg) {
       emailjs.sendForm(
-      "service_95mup4r",
-      "template_vr2k5q1",  //template id
-      form.current,
-      "OAAgS4baLv5nwlbcO"   //user id- api
-    )
-    // .then(
-    //   (result) => {
-    //     alert("Message sent successfully");
-    //     console.log(result.text);
-    //   })
+        "service_95mup4r",
+        "template_vr2k5q1",  //template id
+        form.current,
+        "OAAgS4baLv5nwlbcO"   //user id- api
+      )
+      // .then(
+      //   (result) => {
+      //     alert("Message sent successfully");
+      //     console.log(result.text);
+      //   })
       // .catch(error) => {
       //   alert("Failed to send the msg");
       //   console.log(error.text);
@@ -102,8 +101,8 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading fontFamily={'lorum'} 
-                   _hover={{transform: 'scale(1.05)' }}>Get In Touch</Heading>
+                  <Heading fontFamily={'lorum'}
+                    _hover={{ transform: 'scale(1.05)' }}>Get In Touch</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} fontFamily={'lorum'} color="gray.500">
                     Got a project?<br /> Reach out and let's work together on something exciting.<br />
                   </Text>
@@ -118,8 +117,8 @@ export default function Contact() {
                             variant="ghost"
                             // color="#DCE2FF"
                             color="black"
-                            _hover={{  border: '2px solid #15f4ee',transform: 'scale(1.05)' }}
-                             // borderColor={'#15f4ee'}
+                            _hover={{ border: '2px solid #15f4ee', transform: 'scale(1.05)' }}
+                            // borderColor={'#15f4ee'}
                             // borderWidth='2px' border: '2px solid #1C6FEB'
                             leftIcon={<MdPhone color="#1970F1" size="20px" />}
                             fontFamily={'lorum'}>
@@ -134,7 +133,7 @@ export default function Contact() {
                             variant="ghost"
                             // color="#DCE2FF"
                             color="black"
-                            _hover={{  border: '2px solid #15f4ee',transform: 'scale(1.05)' }}
+                            _hover={{ border: '2px solid #15f4ee', transform: 'scale(1.05)' }}
                             leftIcon={<MdEmail color="#1970F1" size="20px" />}
                             fontFamily={'lorum'}>
                             surya101294@gmail.com
@@ -147,7 +146,7 @@ export default function Contact() {
                             width="200px"
                             variant="ghost"
                             color="black"
-                            _hover={{  border: '2px solid #15f4ee',transform: 'scale(1.05)' }}
+                            _hover={{ border: '2px solid #15f4ee', transform: 'scale(1.05)' }}
                             leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
                             fontFamily={'lorum'}>
                             Ghaziabad, UttarPradesh
@@ -193,7 +192,7 @@ export default function Contact() {
                         download={'Surya_Prakash_Pokhriyal_Resume.pdf'} textDecoration='null'
                       >
                         <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-                          onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
+                          onClick={() => window.open("Surya_Prakash_Pokhriyal_Resume.pdf")}
                           download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
                           textDecoration='null'
                           target="_blank" rel="noreferrer"
@@ -251,59 +250,59 @@ export default function Contact() {
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5} fontFamily={'lorum'}>
-                    <form onSubmit={handleSubmit}
-                          ref={form}>
-                      <FormControl id="name" isRequired>
-                        <FormLabel >Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement
-                            pointerEvents="none"
-                            children={<BsPerson color="gray.800" />}
+                      <form onSubmit={handleSubmit}
+                        ref={form}>
+                        <FormControl id="name" isRequired>
+                          <FormLabel >Your Name</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              children={<BsPerson color="gray.800" />}
+                            />
+                            <Input type="text" size="md" name='user_name'
+                              isRequired onChange={() => setName(true)} />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="name" isRequired>
+                          <FormLabel>Mail</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              children={<MdOutlineEmail color="gray.800" />}
+                            />
+                            <Input type="text" size="md" name='user_email'
+                              isRequired onChange={() => setEmail(true)} />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="name" isRequired>
+                          <FormLabel  >Message</FormLabel>
+                          <Input
+                            borderColor="gray.300"
+                            height={'120px'}
+                            _hover={{
+                              borderRadius: 'gray.300',
+                            }}
+                            name='message'
+                            onChange={() => setMsg(true)}
                           />
-                          <Input type="text" size="md" name='user_name'
-                            isRequired onChange={() => setName(true)} />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name" isRequired>
-                        <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement
-                            pointerEvents="none"
-                            children={<MdOutlineEmail color="gray.800" />}
-                          />
-                          <Input type="text" size="md" name='user_email'
-                            isRequired onChange={() => setEmail(true)} />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name" isRequired>
-                        <FormLabel  >Message</FormLabel>
-                        <Input
-                          borderColor="gray.300"
-                          height={'120px'}
-                          _hover={{
-                            borderRadius: 'gray.300',
-                          }}
-                           name='message'
-                          onChange={() => setMsg(true)}
-                        />
-                      </FormControl>
-                      <FormControl id="name" float="right">
-                        <Button
-                          variant="solid"
-                          bg="#0D74FF"
-                          color="white"
-                          _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
-                          borderColor={'#15f4ee'}
-                          borderWidth='2px'
-                          onClick={handleSubmit}
-                          ref={form}
-                        >
-                          Send Message
-                        </Button>
-                      </FormControl>
+                        </FormControl>
+                        <FormControl id="name" float="right">
+                          <Button
+                            variant="solid"
+                            bg="#0D74FF"
+                            color="white"
+                            _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                            borderColor={'#15f4ee'}
+                            borderWidth='2px'
+                            onClick={handleSubmit}
+                            ref={form}
+                          >
+                            Send Message
+                          </Button>
+                        </FormControl>
                       </form>
                     </VStack>
-                    
+
                   </Box>
                 </Box>
               </WrapItem>

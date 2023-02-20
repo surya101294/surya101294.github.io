@@ -28,14 +28,13 @@ export default function Footer() {
           <HashLink to={'#projectpage'}>Project</HashLink>
           <HashLink to={'#contactpage'}>Contact</HashLink>
           <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-            onClick={() => window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")}
+            onClick={() => window.open("Surya_Prakash_Pokhriyal_Resume.pdf")}
             download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
             textDecoration='null'
             target="_blank" rel="noreferrer"
           >
             Resume
           </a>
-          {/* <HashLink to={'#resume'}></HashLink> */}
         </Stack>
       </Container>
 

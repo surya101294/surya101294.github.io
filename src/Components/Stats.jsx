@@ -8,6 +8,7 @@ const Stats = () => {
       <Center>
         <a href="https://github.com/surya101294">
           <Image
+          border={'1px solid gray'}
            align="left"
            height={'200px'}
            _hover={{ bg: '#15f4ee', transform: 'scale(1.03)', border:'1px solid gray'
@@ -22,6 +23,7 @@ const Stats = () => {
         <a href="https://github.com/surya101294">
           <Image
             // align="center"
+            border={'1px solid gray'}
            _hover={{ bg: '#15f4ee', transform: 'scale(1.03)', border:'1px solid gray' }}
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=surya101294" alt="surya stats"
             height={'200px'}
@@ -32,6 +34,7 @@ const Stats = () => {
         <a href="https://github.com/surya101294">
           <Image
             // align="left"
+            border={'1px solid gray'}
             height={'200px'}
            _hover={{ bg: 'white', transform: 'scale(1.03)', border:'1px solid gray' }}
             src="https://github-readme-stats.vercel.app/api?username=surya101294&count_private=true&show_icons=true" alt="surya stats" //stats

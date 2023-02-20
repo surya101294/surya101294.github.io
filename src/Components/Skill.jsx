@@ -7,8 +7,9 @@ const Skill = () => {
       <Heading fontSize={{ base: 'md', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }} fontFamily={'lorum'}>SKILLS</Heading>
       <hr />
       <br /> <br />
+      {/* <Heading  fontSize={{ base: 'sm', md: 'md', lg: '2xl' }}> Language & Tools..</Heading><br /> */}
       <Center margin='auto' width={'87%'}>
-        <Wrap  spacing={6}>
+        <Wrap  spacing={8}>
           <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
             <Image boxSize='130px' _hover={{ bg: 'white', paddingBottom: '10px', transform: 'scale(1.05)' }} alt='JS' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhdFgKwWT0BD32WAPhBz04H7yjV1VMu7axw&usqp=CAU'
             />
@@ -51,6 +52,8 @@ const Skill = () => {
             />
             <Text fontSize={'lg'} as='b' fontFamily={'lorum'} >NodeJS</Text>
           </Box>
+
+
           <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
             <Image boxSize='130px' _hover={{ bg: 'white', paddingBottom: '10px', transform: 'scale(1.05)' }} alt='chakara' src={'https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg'} />
             <Text fontSize={'lg'} as='b' fontFamily={'lorum'} >Chakra</Text>

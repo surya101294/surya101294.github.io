@@ -5,12 +5,12 @@ import {
   Heading,
   Image,
   Stack,
-  Text,Link, Box,Center, 
+  Text, Link, Box, Center,
 } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
 import Calender from './Calender';
 import { MdEmail } from 'react-icons/md';
-import { FaDownload} from 'react-icons/fa';
+import { FaDownload } from 'react-icons/fa';
 import Stats from './Stats';
 
 export default function SplitScreen() {
@@ -20,20 +20,20 @@ export default function SplitScreen() {
       <hr />
       <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }}  >
         <Flex p={8} flex={1} justify={'center'}>
-          <Stack  w={'full'} maxW={'lg'}>
+          <Stack w={'full'} maxW={'lg'}>
             <Heading fontSize={{ base: 'xl', md: 'xl', lg: 'xl' }}
-            fontFamily={'lorum'}
+              fontFamily={'lorum'}
             >
               {/* <Text fontSize={{ base: 'lg', lg: 'xl' }} color={'blue'} lineHeight={'28px'} fontFamily={'lorum'}> */}
-                I am a Full Stack Web Developer, passionate about building digital products that improve everyday experience for people.
+              I am a Full Stack Web Developer, passionate about building digital products that improve everyday experience for people.
               {/* </Text>{' '} */}
             </Heading>
             <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
-            <ArrowRightIcon/>  Currently pursuing web development course from Masai School and ready to work.</Text>
+              <ArrowRightIcon />  Currently pursuing web development course from Masai School and ready to work.</Text>
             <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
-              <ArrowRightIcon/>  Have an experience of 1200+ hours of coding, 300+ hours of data structures & algorithms and 100+ hours of Soft skills.</Text>
-              <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
-              <ArrowRightIcon/>  Hands-on Experience of more than 4+ year in Automotive Industry.</Text>
+              <ArrowRightIcon />  Have an experience of 1200+ hours of coding, 300+ hours of data structures & algorithms and 100+ hours of Soft skills.</Text>
+            <Text fontFamily={'lorum'} fontSize={{ base: 'md', lg: 'lg' }}>
+              <ArrowRightIcon />  Hands-on Experience of more than 4+ year in Automotive Industry.</Text>
             {/* <Button
               variant="ghost"
               size="lg"
@@ -45,48 +45,50 @@ export default function SplitScreen() {
             Surya101294@gmail.com
             </Text> */}
             <Center>
-            <Stack direction={{ base: 'column', md: 'column' }} spacing={4} justifyContent={'center'}>
-              {/* <Link href="Surya_Prakash_Pokhriyal_Resume.pdf" smooth="true" */}
-              <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-               onClick={()=>window.open("https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing")} 
-               download={'Surya_Prakash_Pokhriyal_Resume.pdf'} textDecoration='null' target="_blank" rel="noreferrer"
-              >
-                <Button
-                  // rounded={'full'}
-                  bg={'#15f4ee'}
-                  // color={'white'}
-                  // _hover=fontFamily={'lorum'}{{
-                  //   bg: 'blue.500',
-                  // }}
-                  variant="ghost"
-                  size="lg"
-                  isround="true"
-                  _hover={{ bg: '#15f4ee', transform: 'scale(1.05)', border:'3px solid #15f4ee' }}
-                    borderColor={'#15f4ee'}
-                  borderWidth='3px'
-                  borderRadius='full'
-                  fontFamily={'lorum'}
-                
-                  // onClick={()=>window.open('https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing')} 
-               
+              <Stack direction={{ base: 'column', md: 'column' }} spacing={4} justifyContent={'center'}>
+                {/* <Link href="Surya_Prakash_Pokhriyal_Resume.pdf" smooth="true" */}
+                <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
+                  onClick={() => window.open("Surya_Prakash_Pokhriyal_Resume.pdf")}
+                  download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+                  textDecoration='null'
+                  target="_blank" rel="noreferrer"
                 >
-                 <FaDownload size="25px" />  Download Resume
-                </Button>
-              </a>
-              <Link href={'mailto:surya101294@gmail.com'} target="_blank">
-              <Button
-                rounded={'full'}
-                // bg={'blue.400'}
-                // color={'white'}
-                _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
-                leftIcon={<MdEmail size="30px" />}
-                fontFamily={'lorum'}
-                width={'300px'}
-              >
-                Surya101294@gmail.com
-              </Button>  
-              </Link>            
-            </Stack>
+                  <Button
+                    // rounded={'full'}
+                    bg={'#15f4ee'}
+                    // color={'white'}
+                    // _hover=fontFamily={'lorum'}{{
+                    //   bg: 'blue.500',
+                    // }}
+                    variant="ghost"
+                    size="lg"
+                    isround="true"
+                    _hover={{ bg: '#15f4ee', transform: 'scale(1.05)', border: '3px solid #15f4ee' }}
+                    borderColor={'#15f4ee'}
+                    borderWidth='3px'
+                    borderRadius='full'
+                    fontFamily={'lorum'}
+
+                  // onClick={()=>window.open('https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing')} 
+
+                  >
+                    <FaDownload size="25px" />  Download Resume
+                  </Button>
+                </a>
+                <Link href={'mailto:surya101294@gmail.com'} target="_blank">
+                  <Button
+                    rounded={'full'}
+                    // bg={'blue.400'}
+                    // color={'white'}
+                    _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
+                    leftIcon={<MdEmail size="30px" />}
+                    fontFamily={'lorum'}
+                    width={'300px'}
+                  >
+                    Surya101294@gmail.com
+                  </Button>
+                </Link>
+              </Stack>
             </Center>
           </Stack>
         </Flex>
@@ -94,6 +96,7 @@ export default function SplitScreen() {
           <Image
             height={'350px'}
             width={'350px'}
+            borderRadius={'full'}
             alt={'Login Image'}
             objectFit={'cover'}
             _hover={{ transform: 'scale(1.05)', }}

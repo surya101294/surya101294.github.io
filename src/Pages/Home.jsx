@@ -11,6 +11,7 @@ import {
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 // import { MdEmail ,MdOutgoingMail } from 'react-icons/md';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
 
@@ -18,7 +19,6 @@ export default function Home() {
     // <Center>
     <Box boxShadow={'2xl'} width={'100%'} margin={'auto'} id='homepage' >
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-
         <Flex flex={1} paddingTop={'50px'} justifyContent={'center'}>
           <Image
             alt={'Image'}
@@ -49,13 +49,27 @@ export default function Home() {
             <Heading lineHeight='tall'>
               <Highlight
                 query={['Surya', 'Prakash', 'Pokhriyal']}
-                styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.500' }}
-                fontFamily={'lorum'}
-                
+                styles={{ px: '', py: '1', rounded: 'full', bg: 'teal.500' }}
               >
                 I'm Surya Prakash Pokhriyal
               </Highlight>
             </Heading>
+            
+            <TypeAnimation
+                // Same String at the start will only be typed once, initially
+              sequence={[
+              'Full Stack Web Developer.',
+              1000,
+              'MERN Stack Web Developer.',
+              1000,
+              'A Tech Enthusiast.',
+              1000,
+              ]}
+              speed={50} // Custom Speed from 1-99 - Default Speed: 40
+               style={{ fontSize: ["30px"]}}
+              // wrapper="span" // Animation will be rendered as a <span>
+              repeat={Infinity} // Repeat this Animation Sequence infinitely
+            />
             <Text fontSize={{ base: 'lg', lg: '2xl' }} color={'grey.700'} 
             fontFamily={'lorum'}
             >

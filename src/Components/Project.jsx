@@ -69,10 +69,10 @@ const Project = () => {
                 <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
                   Sasta Deal
                 </Heading>
-                <Text color={'gray.700'} fontSize={'md'} fontFamily={'lorum'} fontWeight={600}>
+                <Text  fontFamily={'lorum'} fontWeight={600}>
                   It is the replica of Snapdeal.com an E-Commerce Website for Shopping of Fashion, Home and general Products.
                 </Text>
-                <Text color={'gray.700'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
+                <Text color={'blue.300'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
                   Tech stack: HTML | CSS | JavaScript | React | Redux-React |Chakara
                 </Text>
 
@@ -150,11 +150,11 @@ const Project = () => {
                 <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
                   Cool Monk
                 </Heading>
-                <Text color={'gray.700'} fontSize={'md'} fontWeight={600} fontFamily={'lorum'}>
+                <Text   fontWeight={600} fontFamily={'lorum'}>
                   Shop.com is the e-commerce website for buying clothes,electronics and
                   daily essentials.
                 </Text>
-                <Text color={'gray.700'} fontSize={'sm'} fontWeight={600} textTransform={'uppercase'} fontFamily={'lorum'}>
+                <Text color={'blue.300'} fontSize={'sm'} fontWeight={600} textTransform={'uppercase'} fontFamily={'lorum'}>
                   Tech stack : HTML | CSS | JavaScript
                 </Text>
 
@@ -234,10 +234,10 @@ const Project = () => {
                 <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
                   Samadhan Kendra
                 </Heading>
-                <Text color={'gray.700'} fontSize={'md'} fontWeight={600}>
+                <Text fontFamily={'lorum'}  fontWeight={600}>
                   Urban Company is an online platform where one can seek services from different professionals from plumbers to electricians to beauticians.
                 </Text>
-                <Text color={'gray.700'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
+                <Text color={'blue.300'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
                   Tech stack: HTML | CSS | JavaScript | React |Chakara
                 </Text>
 
@@ -314,10 +314,10 @@ const Project = () => {
                 <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
                   Sephora
                 </Heading>
-                <Text color={'gray.700'} fontSize={'md'} fontFamily={'lorum'} fontWeight={600}>
+                <Text fontFamily={'lorum'} fontWeight={600}>
                   Sephora is a French multinational retailer of personal care and beauty products.
                 </Text>
-                <Text color={'gray.700'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
+                <Text color={'blue.300'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
                   Tech stack: HTML | CSS | JavaScript
                 </Text>
 
