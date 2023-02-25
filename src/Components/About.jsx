@@ -1,4 +1,4 @@
-import logo from '../logo/pic.jpg'
+import logo from '../logo/pic.png'
 import {
   Button,
   Flex,

@@ -1,4 +1,4 @@
-import logo from '../logo/pic.jpg'
+import logo from '../logo/pic.png'
 import {
   Box,
   Flex,
@@ -145,32 +145,32 @@ export default function Navbar() {
 
       {isOpen ? (
         <Box pb={4} display={{ md: 'none' }} >
-          <Stack as={'nav'} spacing={4}>
+          <Stack as={'nav'} spacing={4} onClick={isOpen ? onClose : onOpen} >
             <HashLink to={'#homepage'} >
               <Heading size={'md'} color={'gray.700'} gap={'30px'} smooth="true"
                 fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.01)' }}>
-                <button><HiHome /> </button>
+                <button ><HiHome /> </button>
                 HOME
               </Heading></HashLink>
             <HashLink to={'#aboutpage'} ><Heading color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'}
               _hover={{ transform: 'scale(1.01)' }}>
-              <button><FaUserAlt /> </button>
+              <button ><FaUserAlt /> </button>
               ABOUT
             </Heading></HashLink>
             <HashLink to={'#skillpage'} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true"
               _hover={{ transform: 'scale(1.01)' }}>
-              <button><GiSkills /> </button>
+              <button ><GiSkills /> </button>
               SKILL
             </Heading></HashLink>
             <HashLink to={'#projectpage'} ><Heading color={'gray.700'} size={'md'} gap={'30px'} smooth="true" fontFamily={'lorum'}
               _hover={{ transform: 'scale(1.01)' }}>
-              <button><AiOutlineFundProjectionScreen /> </button>
+              <button ><AiOutlineFundProjectionScreen /> </button>
               PROJECT
             </Heading></HashLink>
             <HashLink to={'#contactpage'} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true"
               _hover={{ transform: 'scale(1.01)' }}>
-              <button><HiChatAlt2 /> </button>
+              <button ><HiChatAlt2 /> </button>
               CONTACT
             </Heading></HashLink>
 
@@ -182,7 +182,7 @@ export default function Navbar() {
             >
               <Heading size={'md'} gap={'30px'} fontFamily={'lorum'} smooth="true" color={'teal'}
                 _hover={{ transform: 'scale(1.10)' }}>
-                <button><FcFile /> </button>
+                <button ><FcFile /> </button>
                 RESUME
               </Heading>
 
