@@ -24,7 +24,6 @@ export default function SplitScreen() {
             <Heading fontSize={{ base: 'xl', md: 'xl', lg: 'xl' }}
               fontFamily={'lorum'}
             >
-              {/* <Text fontSize={{ base: 'lg', lg: 'xl' }} color={'blue'} lineHeight={'28px'} fontFamily={'lorum'}> */}
               I am a Full Stack Web Developer, passionate about building digital products that improve everyday experience for people.
               {/* </Text>{' '} */}
             </Heading>
