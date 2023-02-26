@@ -37,7 +37,6 @@ export default function Footer() {
           </a>
         </Stack>
       </Container>
-
       <Box
         borderTopWidth={1}
         borderStyle={'solid'}
