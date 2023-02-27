@@ -9,11 +9,11 @@ import {
   Stack,
   Image, Button, Link
 } from '@chakra-ui/react';
-import coolMonk from '../logo/coolMonk.PNG'
-import sephora from '../logo/sephora.PNG'
-import samadhanKendra from '../logo/samadhanKendra.PNG'
-import sastaDeal from '../logo/sastaDeal.PNG'
-import styluxE from '../logo/styluxE.PNG'
+import coolMonk from '../logo/coolMonk.gif'
+import sephora from '../logo/sephora.gif'
+import samadhanKendra from '../logo/samadhanKendra.gif'
+import sastaDeal from '../logo/sastaDeal.gif'
+import styluxE from '../logo/styluxE.gif'
 
 const Project = () => {
   return (
@@ -28,7 +28,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'480px'}
+              height={'440px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -41,7 +41,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'250px'}
+                height={'200px'}
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -50,7 +50,7 @@ const Project = () => {
                   pos: 'absolute',
                   top: 5,
                   left: 0,
-                  backgroundImage: `url(${styluxE})`,
+                  // backgroundImage: `url(${styluxE})`,
                   filter: 'blur(35px)',
                   zIndex: -3,
                 }}
@@ -109,7 +109,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'480px'}
+              height={'440px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -121,7 +121,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'250px'}
+                height={'200px'}
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -130,7 +130,7 @@ const Project = () => {
                   pos: 'absolute',
                   top: 5,
                   left: 0,
-                  backgroundImage: `url(${sastaDeal})`,
+                  // backgroundImage: `url(${sastaDeal})`,
                   filter: 'blur(35px)',
                   zIndex: -1,
                 }}
@@ -195,7 +195,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'480px'}
+              height={'440px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -208,7 +208,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'250px'}
+                height={'200px'}
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -217,7 +217,7 @@ const Project = () => {
                   pos: 'absolute',
                   top: 5,
                   left: 0,
-                  backgroundImage: `url(${coolMonk})`,
+                  // backgroundImage: `url(${coolMonk})`,
                   filter: 'blur(45px)',
                   zIndex: -3,
                 }}
@@ -277,7 +277,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'480px'}
+              height={'440px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -289,7 +289,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'250px'}
+                height={'200px'}
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -298,7 +298,7 @@ const Project = () => {
                   pos: 'absolute',
                   top: 5,
                   left: 0,
-                  backgroundImage: `url(${samadhanKendra})`,
+                  // backgroundImage: `url(${samadhanKendra})`,
                   filter: 'blur(40px)',
                   zIndex: -1,
                 }}
@@ -363,7 +363,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'480px'}
+              height={'440px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -375,7 +375,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'250px'}
+                height={'200px'}
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -384,7 +384,7 @@ const Project = () => {
                   pos: 'absolute',
                   top: 5,
                   left: 0,
-                  backgroundImage: `url(${sephora})`,
+                  // backgroundImage: `url(${sephora})`,
                   filter: 'blur(40px)',
                   zIndex: -3,
                 }}
