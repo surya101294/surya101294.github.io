@@ -51,12 +51,12 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${styluxE})`,
-                  filter: 'blur(30px)',
+                  filter: 'blur(35px)',
                   zIndex: -3,
                 }}
                 _groupHover={{
                   _after: {
-                    filter: 'blur(20px)',
+                    filter: 'blur(40px)',
                     transform: 'scale(1.05)',
                   },
                 }}>
@@ -218,12 +218,12 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${coolMonk})`,
-                  filter: 'blur(30px)',
+                  filter: 'blur(45px)',
                   zIndex: -3,
                 }}
                 _groupHover={{
                   _after: {
-                    filter: 'blur(20px)',
+                    filter: 'blur(40px)',
                     transform: 'scale(1.05)',
                   },
                 }}>
@@ -299,12 +299,12 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${samadhanKendra})`,
-                  filter: 'blur(35px)',
+                  filter: 'blur(40px)',
                   zIndex: -1,
                 }}
                 _groupHover={{
                   _after: {
-                    filter: 'blur(20px)',
+                    filter: 'blur(40px)',
                     transform: 'scale(1.05)',
                   },
                 }}>
@@ -385,12 +385,12 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${sephora})`,
-                  filter: 'blur(30px)',
+                  filter: 'blur(40px)',
                   zIndex: -3,
                 }}
                 _groupHover={{
                   _after: {
-                    filter: 'blur(20px)',
+                    filter: 'blur(40px)',
                     transform: 'scale(1.05)',
                   },
                 }}>
