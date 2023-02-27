@@ -13,6 +13,7 @@ import coolMonk from '../logo/coolMonk.PNG'
 import sephora from '../logo/sephora.PNG'
 import samadhanKendra from '../logo/samadhanKendra.PNG'
 import sastaDeal from '../logo/sastaDeal.PNG'
+import styluxE from '../logo/styluxE.PNG'
 
 const Project = () => {
   return (
@@ -21,6 +22,88 @@ const Project = () => {
       <hr />
       <Center>
         <Stack direction={{ base: 'column', md: 'row' }} gap={'25px'} >
+
+          <Center py={12} >
+            <Box
+              role={'group'}
+              p={6}
+              maxW={'500px'}
+              height={'480px'}
+              w={'full'}
+              bg={useColorModeValue('white', 'gray.800')}
+              boxShadow={'2xl'}
+              rounded={'lg'}
+              pos={'relative'}
+              zIndex={1}
+              _hover={{ transform: 'scale(1.05)', }}
+            >
+              <Box
+                rounded={'lg'}
+                mt={-12}
+                pos={'relative'}
+                height={'250px'}
+                _after={{
+                  transition: 'all .3s ease',
+                  content: '""',
+                  w: 'full',
+                  h: 'full',
+                  pos: 'absolute',
+                  top: 5,
+                  left: 0,
+                  backgroundImage: `url(${styluxE})`,
+                  filter: 'blur(30px)',
+                  zIndex: -3,
+                }}
+                _groupHover={{
+                  _after: {
+                    filter: 'blur(20px)',
+                    transform: 'scale(1.05)',
+                  },
+                }}>
+                <Image
+                  rounded={'lg'}
+                  // height={280}
+                  // width={350}
+                  objectFit={'cover'}
+                  src={styluxE}
+                />
+              </Box>
+              <Stack pt={10} align={'center'}>
+                <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700} textTransform={'uppercase'} >
+                Stylux
+                </Heading>
+                <Text fontWeight={600} fontFamily={'lorum'}>
+                Stylux is E-commerce website specialized in online retailing of men's and women's garments and accessories.
+                </Text>
+                <Text color={'blue.300'} fontSize={'sm'} fontWeight={600} textTransform={'uppercase'} fontFamily={'lorum'}>
+                  Tech stack : HTML | CSS | JavaScript | React| react-redux | chakara | Nodejs | Express | MongoDB  
+                </Text>
+
+                <Stack direction={'row'} align={'center'}>
+                  <Link href={'https://github.com/pgariya/remarkable-veil-524'} target="_blank">
+                    <Button
+                      rounded={'full'}
+                      // bg={'blue.400'}
+                      // color={'white'}
+                      _hover={{
+                        bg: 'blue.500',
+                        transform: 'scale(1.2)'
+                      }}
+                      leftIcon={<FaGithub size="30px" />}
+                    >
+                    </Button>
+                  </Link>
+                  <Link href={'https://styluxe.vercel.app/'} target="_blank">
+                    <Button rounded={'full'} _hover={{
+                      bg: 'green.500',
+                      transform: 'scale(1.2)'
+                    }} fontFamily={'lorum'}>Live</Button>
+                  </Link>
+                </Stack>
+              </Stack>
+            </Box>
+          </Center>
+
           <Center py={12}>
             <Box
               role={'group'}
@@ -66,10 +149,10 @@ const Project = () => {
                 />
               </Box>
               <Stack pt={10} align={'center'}>
-                <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
+                <Heading fontSize={'2xl'} fontFamily={'lorum'} textTransform={'uppercase'} fontWeight={700}>
                   Sasta Deal
                 </Heading>
-                <Text  fontFamily={'lorum'} fontWeight={600}>
+                <Text fontFamily={'lorum'} fontWeight={600}>
                   It is the replica of Snapdeal.com an E-Commerce Website for Shopping of Fashion, Home and general Products.
                 </Text>
                 <Text color={'blue.300'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
@@ -101,6 +184,12 @@ const Project = () => {
             </Box>
           </Center>
 
+
+        </Stack>
+      </Center>
+      <Center>
+        <Stack direction={{ base: 'column', md: 'row' }} gap={'25px'} >
+
           <Center py={12} >
             <Box
               role={'group'}
@@ -129,8 +218,8 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${coolMonk})`,
-                  filter: 'blur(20px)',
-                  zIndex: -1,
+                  filter: 'blur(30px)',
+                  zIndex: -3,
                 }}
                 _groupHover={{
                   _after: {
@@ -147,10 +236,10 @@ const Project = () => {
                 />
               </Box>
               <Stack pt={10} align={'center'}>
-                <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
+                <Heading fontSize={'2xl'} textTransform={'uppercase'} fontFamily={'lorum'} fontWeight={700}>
                   Cool Monk
                 </Heading>
-                <Text   fontWeight={600} fontFamily={'lorum'}>
+                <Text fontWeight={600} fontFamily={'lorum'}>
                   Shop.com is the e-commerce website for buying clothes,electronics and
                   daily essentials.
                 </Text>
@@ -182,10 +271,7 @@ const Project = () => {
               </Stack>
             </Box>
           </Center>
-        </Stack>
-      </Center>
-      <Center  >
-        <Stack direction={{ base: 'column', md: 'row' }} gap={'25px'} >
+
           <Center py={12}>
             <Box
               role={'group'}
@@ -231,10 +317,10 @@ const Project = () => {
                 />
               </Box>
               <Stack pt={10} align={'center'}>
-                <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
+                <Heading fontSize={'2xl'} textTransform={'uppercase'} fontFamily={'lorum'} fontWeight={700}>
                   Samadhan Kendra
                 </Heading>
-                <Text fontFamily={'lorum'}  fontWeight={600}>
+                <Text fontFamily={'lorum'} fontWeight={600}>
                   Urban Company is an online platform where one can seek services from different professionals from plumbers to electricians to beauticians.
                 </Text>
                 <Text color={'blue.300'} fontSize={'sm'} textTransform={'uppercase'} fontWeight={600}>
@@ -266,6 +352,12 @@ const Project = () => {
             </Box>
           </Center>
 
+        </Stack>
+      </Center>
+      <Center  >
+        <Stack direction={{ base: 'column', md: 'row' }} gap={'25px'} >
+
+
           <Center py={12}>
             <Box
               role={'group'}
@@ -293,8 +385,8 @@ const Project = () => {
                   top: 5,
                   left: 0,
                   backgroundImage: `url(${sephora})`,
-                  filter: 'blur(15px)',
-                  zIndex: -1,
+                  filter: 'blur(30px)',
+                  zIndex: -3,
                 }}
                 _groupHover={{
                   _after: {
@@ -311,7 +403,7 @@ const Project = () => {
                 />
               </Box>
               <Stack pt={10} align={'center'}>
-                <Heading fontSize={'2xl'} fontFamily={'lorum'} fontWeight={700}>
+                <Heading fontSize={'2xl'} textTransform={'uppercase'} fontFamily={'lorum'} fontWeight={700}>
                   Sephora
                 </Heading>
                 <Text fontFamily={'lorum'} fontWeight={600}>
