@@ -22,11 +22,11 @@ export default function Footer() {
         align={'center'}>
         {/* <Logo /> */}
         <Stack direction={'row'} spacing={6}>
-          <HashLink to={'#homepage'} >Home</HashLink>
-          <HashLink to={'#aboutpage'} >About</HashLink>
-          <HashLink to={'#skillpage'}>Skill</HashLink>
-          <HashLink to={'#projectpage'}>Project</HashLink>
-          <HashLink to={'#contactpage'}>Contact</HashLink>
+          <HashLink to={'#homepage'} offset={-100} smooth={true} spy={true} >Home</HashLink>
+          <HashLink to={'#aboutpage'} offset={-100} smooth={true} spy={true}>About</HashLink>
+          <HashLink to={'#skillpage'} offset={-100} smooth={true} spy={true}>Skill</HashLink>
+          <HashLink to={'#projectpage'} offset={-100} smooth={true} spy={true}>Project</HashLink>
+          <HashLink to={'#contactpage'} offset={-100} smooth={true} spy={true}>Contact</HashLink>
           <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"} smooth="true"
             onClick={() => window.open("fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf")}
             download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'}

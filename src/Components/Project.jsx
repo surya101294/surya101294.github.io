@@ -28,7 +28,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'440px'}
+              height={'430px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -41,7 +41,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'200px'}
+                height={{ base: '120px', md: '180px', lg: '200px' }} 
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -109,7 +109,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'440px'}
+              height={'430px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -121,7 +121,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'200px'}
+                height={{ base: '120px', md: '180px', lg: '200px' }} 
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -195,7 +195,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'440px'}
+              height={'430px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -208,7 +208,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'200px'}
+                height={{ base: '120px', md: '180px', lg: '200px' }} 
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -277,7 +277,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'440px'}
+              height={'430px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -289,7 +289,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'200px'}
+                height={{ base: '120px', md: '180px', lg: '200px' }} 
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
@@ -363,7 +363,7 @@ const Project = () => {
               role={'group'}
               p={6}
               maxW={'500px'}
-              height={'440px'}
+              height={'430px'}
               w={'full'}
               bg={useColorModeValue('white', 'gray.800')}
               boxShadow={'2xl'}
@@ -375,7 +375,7 @@ const Project = () => {
                 rounded={'lg'}
                 mt={-12}
                 pos={'relative'}
-                height={'200px'}
+                height={{ base: '120px', md: '180px', lg: '200px' }} 
                 _after={{
                   transition: 'all .3s ease',
                   content: '""',
