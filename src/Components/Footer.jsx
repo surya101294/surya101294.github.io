@@ -27,9 +27,9 @@ export default function Footer() {
           <HashLink to={'#skillpage'}>Skill</HashLink>
           <HashLink to={'#projectpage'}>Project</HashLink>
           <HashLink to={'#contactpage'}>Contact</HashLink>
-          <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-            onClick={() => window.open("Surya_Prakash_Pokhriyal_Resume.pdf")}
-            download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+          <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"} smooth="true"
+            onClick={() => window.open("fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf")}
+            download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'}
             textDecoration='null'
             target="_blank" rel="noreferrer"
           >

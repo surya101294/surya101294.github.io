@@ -81,7 +81,7 @@ export default function Home() {
               {/* <Link href={'https://drive.google.com/file/d/1kajrrkN5uytJDLdvc4ywOtguaGMt_dCi/view?usp=sharing'}  
             
             >           */}
-              {/* <a href="Surya_Prakash_Pokhriyal_Resume.pdf" download='Surya_Prakash_Pokhriyal_Resume.pdf' >
+              {/* <a href="fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf" download='fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf' >
             <Button
               // rounded={'full'}
               bg={'blue.400'}

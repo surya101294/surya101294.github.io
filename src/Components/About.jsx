@@ -45,10 +45,10 @@ export default function SplitScreen() {
             </Text> */}
             <Center>
               <Stack direction={{ base: 'column', md: 'column' }} spacing={4} justifyContent={'center'}>
-                {/* <Link href="Surya_Prakash_Pokhriyal_Resume.pdf" smooth="true" */}
-                <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-                  onClick={() => window.open("Surya_Prakash_Pokhriyal_Resume.pdf")}
-                  download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+                {/* <Link href="fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf" smooth="true" */}
+                <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"} smooth="true"
+                  onClick={() => window.open("fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf")}
+                  download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'}
                   textDecoration='null'
                   target="_blank" rel="noreferrer"
                 >

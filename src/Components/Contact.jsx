@@ -188,12 +188,12 @@ export default function Contact() {
                   <Center>
                     <HStack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'10px'} align={'center'}>
                       {/* <Link href={'https://github.com/surya101294'}> */}
-                      <Link href="Surya_Prakash_Pokhriyal_Resume.pdf" smooth="true"
-                        download={'Surya_Prakash_Pokhriyal_Resume.pdf'} textDecoration='null'
+                      <Link href="fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf" smooth="true"
+                        download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'} textDecoration='null'
                       >
-                        <a href={"Surya_Prakash_Pokhriyal_Resume.pdf"} smooth="true"
-                          onClick={() => window.open("Surya_Prakash_Pokhriyal_Resume.pdf")}
-                          download={'Surya_Prakash_Pokhriyal_Resume.pdf'}
+                        <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"} smooth="true"
+                          onClick={() => window.open("fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf")}
+                          download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'}
                           textDecoration='null'
                           target="_blank" rel="noreferrer"
                         >
