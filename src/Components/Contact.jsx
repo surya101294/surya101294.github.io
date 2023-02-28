@@ -86,7 +86,7 @@ export default function Contact() {
   }
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' boxShadow={'2xl'} width={'95%'} margin={'auto'}
-      fontFamily={'lorum'}>
+      fontFamily={'lorum'} paddingTop={'40px'}>
       <Flex>
         <Box
           _hover={{ transform: 'scale(1.01)', }}

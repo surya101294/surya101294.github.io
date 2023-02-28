@@ -78,7 +78,7 @@ export default function Navbar() {
                   <button><HiHome /> </button>
                   HOME
                 </Heading></HashLink>
-              <HashLink to={'#aboutpage'} offset={'-100px'} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'}  fontFamily={'lorum'}
+              <HashLink to={'#aboutpage'} offset={'-50px'} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'}  fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.03)' }}>
                 <button><FaUserAlt /> </button>
                 ABOUT

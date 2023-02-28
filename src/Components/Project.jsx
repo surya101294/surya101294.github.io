@@ -17,7 +17,8 @@ import styluxE from '../logo/styluxE.gif'
 
 const Project = () => {
   return (
-    <Box id='projectpage' boxShadow={'2xl'} width={'95%'} margin={'auto'} fontFamily={'lorum'}>
+    <Box id='projectpage'  paddingTop={'50px'}>
+    <Box  boxShadow={'2xl'} width={'95%'} margin={'auto'} fontFamily={'lorum'}>
       <Heading fontFamily={'lorum'} fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }}>PROJECTS</Heading> <br /><br />
       <hr />
       <Center>
@@ -440,6 +441,7 @@ const Project = () => {
 
         </Stack>
       </Center>
+    </Box>
     </Box>
   )
 }

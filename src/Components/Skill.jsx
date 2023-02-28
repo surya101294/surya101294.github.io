@@ -4,11 +4,12 @@ import { Image, Wrap, Heading, Box, Center, Text } from '@chakra-ui/react'
 const Skill = () => {
 
   return (
-    <Box style={{ width: '95%', margin: 'auto' }} id='skillpage' boxShadow={'2xl'} >
-      <Heading fontSize={{ base: 'md', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }} fontFamily={'lorum'}>SKILLS</Heading>
+    <Box id='skillpage' paddingTop={'50px'}>
+    <Box style={{ width: '95%', margin: 'auto' }}  boxShadow={'2xl'} >
+      <Heading fontSize={{ base: 'md', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }}  fontFamily={'lorum'}>SKILLS</Heading>
       <hr />
       <br /> <br />
-      <Heading fontSize={{ base: 'sm', md: 'md', lg: '3xl' }} fontFamily={'lorum'}> Frontend Tech Stack</Heading><br />
+      <Heading fontSize={{ base: 'sm', md: 'md', lg: '3xl' }} fontFamily={'lorum'} > Frontend Tech Stack</Heading><br />
       <Center margin='auto' width={'80%'}>
         <Wrap spacing={{ base: '2', md: '8', lg: '10' }}>
           <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
@@ -128,6 +129,7 @@ const Skill = () => {
       </Center>
       <br /> <br />
     </Box>
+     </Box>
   )
 }
 
