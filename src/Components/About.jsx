@@ -101,7 +101,7 @@ export default function SplitScreen() {
             objectFit={'cover'}
             _hover={{ transform: 'scale(1.05)', }}
             src={logo}
-          />
+          /> 
         </Flex>
       </Stack>
       <Text fontSize={{ base: 'md', lg: '3xl' }} color={'gray.800'} p={4} fontFamily={'lorum'} >Github Statistics : </Text>
