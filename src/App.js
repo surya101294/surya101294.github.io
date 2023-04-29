@@ -30,20 +30,20 @@ function App() {
     }, []);
 
     const [loading, setLoading] = useState(true)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
-  
-  if(loading) {
-  return (
-    <Box height="100vh"  backgroundColor={{base:"black",md:"none"}} paddingTop={{base:"60%",sm:"30%",md:"5px"}} >
-      <Image src={loader} w="50%" h='50%' m='auto'/>
-    </Box>
-  )
-}
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false)
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return (
+            <Box height="100vh" backgroundColor={{ base: "black", md: "none" }} paddingTop={{ base: "60%", sm: "30%", md: "5px" }} >
+                <Image src={loader} w="25%" h='35%' m='auto' />
+            </Box>
+        )
+    }
 
     return (
         <div className="App">
@@ -145,11 +145,11 @@ function App() {
             <About />
             {/* <CustomizedTimeline/> */}
             <Project />
-            <Skills/> 
+            <Skills />
             {/* <Skill /> */}
             <Contact />
             <Footer />
-            <TopToBottom/>
+            <TopToBottom />
         </div>
     );
 }

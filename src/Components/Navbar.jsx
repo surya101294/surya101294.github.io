@@ -72,40 +72,40 @@ export default function Navbar() {
               ))} */}
             <Stack direction={'row'} spacing={6} fontFamily={'lorum'}>
               <HashLink to={'#homepage'} offset={-100} smooth={true} spy={true}>
-                <Heading size={'sm'} color={'gray.700'} gap={'30px'} 
+                <Heading size={'sm'} color={'gray.700'} gap={'30px'}
                   fontFamily={'lorum'}
                   _hover={{ transform: 'scale(1.03)' }}>
                   <button><HiHome /> </button>
                   HOME
                 </Heading></HashLink>
-              <HashLink to={'#aboutpage'} offset={'-50px'} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'}  fontFamily={'lorum'}
+              <HashLink to={'#aboutpage'} offset={'-50px'} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'} fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.03)' }}>
                 <button><FaUserAlt /> </button>
                 ABOUT
               </Heading></HashLink>
-              <HashLink to={'#skillpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'} fontFamily={'lorum'} 
+              <HashLink to={'#skillpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'} fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.03)' }}>
                 <button><GiSkills /> </button>
                 SKILL
               </Heading></HashLink>
-              <HashLink to={'#projectpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'}  fontFamily={'lorum'}
+              <HashLink to={'#projectpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'} fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.03)' }}>
                 <button><AiOutlineFundProjectionScreen /> </button>
                 PROJECT
               </Heading></HashLink>
-              <HashLink to={'#contactpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'} fontFamily={'lorum'} 
+              <HashLink to={'#contactpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'sm'} gap={'30px'} fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.03)' }}>
                 <button><HiChatAlt2 /> </button>
                 CONTACT
               </Heading></HashLink>
 
-              <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"} 
+              <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"}
                 onClick={() => window.open("fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf")}
                 download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'}
                 textDecoration='null'
                 target="_blank" rel="noreferrer"
               >
-                <Heading size={'sm'} gap={'30px'} fontFamily={'lorum'}  color={'teal'}
+                <Heading size={'sm'} gap={'30px'} fontFamily={'lorum'} color={'teal'}
                   _hover={{ transform: 'scale(1.10)' }}>
                   <button><FcFile /> </button>
                   RESUME
@@ -147,40 +147,40 @@ export default function Navbar() {
         <Box pb={4} display={{ md: 'none' }} >
           <Stack as={'nav'} spacing={4} onClick={isOpen ? onClose : onOpen} >
             <HashLink to={'#homepage'} offset={-100} smooth={true} spy={true}>
-              <Heading size={'md'} color={'gray.700'} gap={'30px'} 
+              <Heading size={'md'} color={'gray.700'} gap={'30px'}
                 fontFamily={'lorum'}
                 _hover={{ transform: 'scale(1.01)' }}>
                 <button ><HiHome /> </button>
                 HOME
               </Heading></HashLink>
-            <HashLink to={'#aboutpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'}  fontFamily={'lorum'}
+            <HashLink to={'#aboutpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'}
               _hover={{ transform: 'scale(1.01)' }}>
               <button ><FaUserAlt /> </button>
               ABOUT
             </Heading></HashLink>
-            <HashLink to={'#skillpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} 
+            <HashLink to={'#skillpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'}
               _hover={{ transform: 'scale(1.01)' }}>
               <button ><GiSkills /> </button>
               SKILL
             </Heading></HashLink>
-            <HashLink to={'#projectpage'} offset={-100} smooth={true} spy={true}><Heading color={'gray.700'} size={'md'} gap={'30px'}  fontFamily={'lorum'}
+            <HashLink to={'#projectpage'} offset={-100} smooth={true} spy={true}><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'}
               _hover={{ transform: 'scale(1.01)' }}>
               <button ><AiOutlineFundProjectionScreen /> </button>
               PROJECT
             </Heading></HashLink>
-            <HashLink to={'#contactpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} 
+            <HashLink to={'#contactpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'}
               _hover={{ transform: 'scale(1.01)' }}>
               <button ><HiChatAlt2 /> </button>
               CONTACT
             </Heading></HashLink>
 
-            <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"} 
+            <a href={"fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf"}
               onClick={() => window.open("fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf")}
               download={'fw21_0842-Surya-Prakash-Pokhriyal-Resume.pdf'}
               textDecoration='null'
               target="_blank" rel="noreferrer"
             >
-              <Heading size={'md'} gap={'30px'} fontFamily={'lorum'}  color={'teal'}
+              <Heading size={'md'} gap={'30px'} fontFamily={'lorum'} color={'teal'}
                 _hover={{ transform: 'scale(1.10)' }}>
                 <button ><FcFile /> </button>
                 RESUME

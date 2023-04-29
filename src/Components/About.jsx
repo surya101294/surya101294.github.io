@@ -15,7 +15,7 @@ import Stats from './Stats';
 
 export default function SplitScreen() {
   return (
-    <Box id='aboutpage'  paddingTop={'50px'}>
+    <Box id='aboutpage'  paddingTop={'50px'} >
     <Box boxShadow={'2xl'} width={'95%'} margin={'auto'} fontFamily={'lorum'} >
       <Heading fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }} fontFamily={'lorum'}>ABOUT</Heading>
       <hr />
@@ -93,7 +93,7 @@ export default function SplitScreen() {
           </Stack>
         </Flex>
         <Flex flex={1} justifyContent={'center'}>
-          <Image
+          <Image  
             height={'350px'}
             width={'350px'}
             borderRadius={'full'}
@@ -111,5 +111,5 @@ export default function SplitScreen() {
       <br />
     </Box>
     </Box>
-  );
+  )
 }
