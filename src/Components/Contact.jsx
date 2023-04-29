@@ -27,7 +27,7 @@ import {
   MdOutlineEmail,
 } from 'react-icons/md';
 import { BsPerson } from 'react-icons/bs';
-
+// import { FaCopy } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -135,7 +135,8 @@ export default function Contact() {
                             color="black"
                             _hover={{ border: '2px solid #15f4ee', transform: 'scale(1.05)' }}
                             leftIcon={<MdEmail color="#1970F1" size="20px" />}
-                            fontFamily={'lorum'}>
+                            fontFamily={'lorum'}
+                          >
                             surya101294@gmail.com
                           </Button>
                         </Link>
@@ -239,7 +240,10 @@ export default function Contact() {
                           _hover={{ bg: '#15f4ee', transform: 'scale(1.05)' }}
                           borderColor={'#15f4ee'}
                           borderWidth='1px'
-                          boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}> </Button>
+                          boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}
+                        >
+
+                        </Button>
                       </Link>
                       {/* <Button rounded={'full'}>How It Works</Button> */}
                     </HStack>
@@ -313,3 +317,36 @@ export default function Contact() {
     </Container>
   );
 }
+
+
+/*
+To add functionality of copying in the clipboard
+  < Button
+size = "md"
+height = "48px"
+width = "200px"
+variant = "ghost"
+// color="#DCE2FF"
+color = "black"
+_hover = {{ border: '2px solid #15f4ee', transform: 'scale(1.05)' }}
+leftIcon = {< MdEmail color = "#1970F1" size = "20px" />}
+fontFamily = { 'lorum'}
+onClick = {()=> {                                     // to add copying the mail to clip board
+  navigator.clipboard.writeText("surya101294@gmail.com")
+  toast({
+    position: 'bottom-left',
+    render: () => (
+      <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" backdropBlur={true}>
+        Email copied to clipboard
+      </Button>
+    ),
+  })
+}}
+color = "#c9fff3" variant = 'outline' w = "100%" borderColor = "gray"
+_hover = {{ bg: 'teal.900' }}
+                          >
+
+  surya101294@gmail.com
+<FaCopy /> 
+</Button >
+*/
