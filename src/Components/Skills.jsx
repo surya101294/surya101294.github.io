@@ -173,7 +173,7 @@ const Skills = () => {
   return (
     <
       Box id="skillpage"
-      py='65px'
+      // py='65px'
       // bg={useColorModeValue('purple.100', 'blue.900')}
       // css={{
       // backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
@@ -183,9 +183,10 @@ const Skills = () => {
       data-aos="fade-right"
       data-aos-duration="2000"
       // color={colorMode === 'light' ? '#454360' : '#cdcdff'}
-    >
-      <Text >
+    > 
+    <Text >
         <Heading fontSize={{ base: 'md', md: '5xl', lg: '7xl' }} _hover={{ transform: 'scale(1.05)', }} fontFamily={'lorum'}>SKILLS</Heading>
+          <hr/>
         <Box p='5%'>
           <Tabs
             variant='soft-rounded'
@@ -212,7 +213,7 @@ const Skills = () => {
                     all.map(e => (
                       <WrapItem  >
                         <Tooltip hasArrow label={e.name} placement='bottom'>
-                          <Center className={e['class-card-img']} >
+                          <Center  >
                             <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
                               <Image boxSize={{ base: '60px', md: '90px', lg: '120px' }} _hover={{
                                 bg: 'white', paddingBottom: '10px', transform: 'scale(1.05)'
@@ -221,8 +222,6 @@ const Skills = () => {
                               />
                               <Text fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} as='b' fontFamily={'lorum'} >{e.name}</Text>
                             </Box>
-                            {/* <Image src={e.Image} /> <br /> */}
-                            {/* <Text fontSize='2px' className={e['class-card-name']}>{e.name}</Text> */}
                           </Center>
                         </Tooltip>
                       </WrapItem >
@@ -233,14 +232,20 @@ const Skills = () => {
 
               {/* Frontend */}
               <TabPanel>
-                <Wrap spacing='100px' justify='center'>
+                <Wrap spacing='60px' justify='center'>
                   {
                     Frontend.map(e => (
-                      <WrapItem className={e['class-card']} >
+                      <WrapItem >
                         <Tooltip hasArrow label={e.name} placement='bottom'>
-                          <Center w='100px' className={e['class-card-img']} >
-                            <Image src={e.Image} /> <br />
-                            {/* <Text fontSize='2px' className={e['class-card-name']}>{e.name}</Text> */}
+                          <Center >
+                          <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
+                              <Image boxSize={{ base: '60px', md: '90px', lg: '120px' }} _hover={{
+                                bg: 'white', paddingBottom: '10px', transform: 'scale(1.05)'
+                              }}
+                                src={e.Image}
+                              />
+                              <Text fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} as='b' fontFamily={'lorum'} >{e.name}</Text>
+                            </Box>
                           </Center>
                         </Tooltip>
                       </WrapItem >
@@ -251,14 +256,20 @@ const Skills = () => {
 
               {/* Backend */}
               <TabPanel>
-                <Wrap spacing='100px' justify='center'>
+                <Wrap spacing='60px' justify='center'>
                   {
                     Backend.map(e => (
-                      <WrapItem className={e['class-card']} >
+                      <WrapItem  >
                         <Tooltip hasArrow label={e.name} placement='bottom'>
-                          <Center w='100px' className={e['class-card-img']} >
-                            <Image src={e.Image} /> <br />
-                            {/* <Text fontSize='2px' className={e['class-card-name']}>{e.name}</Text> */}
+                          <Center>
+                          <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
+                              <Image boxSize={{ base: '60px', md: '90px', lg: '120px' }} _hover={{
+                                bg: 'white', paddingBottom: '10px', transform: 'scale(1.05)'
+                              }}
+                                src={e.Image}
+                              />
+                              <Text fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} as='b' fontFamily={'lorum'} >{e.name}</Text>
+                            </Box>
                           </Center>
                         </Tooltip>
                       </WrapItem >
@@ -269,14 +280,20 @@ const Skills = () => {
 
               {/* Tools */}
               <TabPanel>
-                <Wrap spacing='100px' justify='center'>
+                <Wrap spacing='60px' justify='center'>
                   {
                     tools.map(e => (
-                      <WrapItem className={e['class-card']} >
+                      <WrapItem  >
                         <Tooltip hasArrow label={e.name} placement='bottom'>
-                          <Center w='100px' className={e['class-card-img']} >
-                            <Image src={e.Image} /> <br />
-                            {/* <Text fontSize='2px' className={e['class-card-name']}>{e.name}</Text> */}
+                          <Center >
+                          <Box bgColor='blackAlpha.200' boxShadow={'2xl'}>
+                              <Image boxSize={{ base: '60px', md: '90px', lg: '120px' }} _hover={{
+                                bg: 'white', paddingBottom: '10px', transform: 'scale(1.05)'
+                              }}
+                                src={e.Image}
+                              />
+                              <Text fontSize={{ base: 'sm', md: 'md', lg: 'xl' }} as='b' fontFamily={'lorum'} >{e.name}</Text>
+                            </Box>
                           </Center>
                         </Tooltip>
                       </WrapItem >
